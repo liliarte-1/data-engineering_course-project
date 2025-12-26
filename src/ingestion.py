@@ -17,7 +17,10 @@ print(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 # STEP 1: RETRIEVE DATA FROM WEB SOURCE
 # ============================================================================
 print("STEP 1: RETRIEVE DATA FROM WEB SOURCE")
-url = "https://raw.githubusercontent.com/victorbrub/data-engineering-class/refs/heads/main/pre-post_processing/exercise.csv"
+urls = ["https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv", 
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv"]
+
 response = requests.get(url)
 print(response.text)
 
