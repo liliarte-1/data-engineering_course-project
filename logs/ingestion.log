@@ -1,0 +1,275 @@
+2025-12-27 18:36:11,346 - INFO - Started at: 2025-12-27 18:36:11
+
+2025-12-27 18:36:11,346 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:36:12,050 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:36:12,068 - INFO - Saved raw dataset: 0201010101.csv (771 rows, 1 columns)
+2025-12-27 18:36:12,068 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:36:12,799 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:36:12,805 - INFO - Saved raw dataset: households_dataset.csv (771 rows, 1 columns)
+2025-12-27 18:36:12,806 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:36:13,500 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:36:13,505 - INFO - Saved raw dataset: socioeconomic_dataset.csv (771 rows, 1 columns)
+2025-12-27 18:38:04,034 - INFO - Started at: 2025-12-27 18:38:04
+
+2025-12-27 18:38:04,035 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:38:04,880 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:38:04,906 - INFO - Saved raw dataset: 0201010101.csv (771 rows, 1 columns)
+2025-12-27 18:38:04,906 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:38:05,631 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:38:05,634 - INFO - Saved raw dataset: households_dataset.csv (771 rows, 1 columns)
+2025-12-27 18:38:05,634 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:38:06,128 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:38:06,137 - INFO - Saved raw dataset: socioeconomic_dataset.csv (771 rows, 1 columns)
+2025-12-27 18:38:11,797 - INFO - Started at: 2025-12-27 18:38:11
+
+2025-12-27 18:38:11,798 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:38:12,222 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:38:12,253 - INFO - Saved raw dataset: 0201010101.csv (771 rows, 73 columns)
+2025-12-27 18:38:12,253 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:38:12,582 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:38:12,588 - INFO - Saved raw dataset: households_dataset.csv (771 rows, 5 columns)
+2025-12-27 18:38:12,588 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:38:12,959 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:38:12,963 - INFO - Saved raw dataset: socioeconomic_dataset.csv (771 rows, 6 columns)
+2025-12-27 18:51:54,489 - INFO - Started at: 2025-12-27 18:51:54
+
+2025-12-27 18:51:54,489 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:51:55,307 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:51:55,360 - INFO - Saved raw dataset: 0201010101.csv (771 rows, 73 columns)
+2025-12-27 18:51:55,360 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:51:56,013 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:51:56,024 - INFO - Saved raw dataset: households_dataset.csv (771 rows, 5 columns)
+2025-12-27 18:51:56,024 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:51:56,710 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:51:56,719 - INFO - Saved raw dataset: socioeconomic_dataset.csv (771 rows, 6 columns)
+2025-12-27 18:52:28,034 - INFO - Started at: 2025-12-27 18:52:28
+
+2025-12-27 18:52:28,035 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:52:28,416 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:52:28,482 - INFO - Saved raw dataset: 0201010101.csv (771 rows, 73 columns)
+2025-12-27 18:52:28,482 - INFO - 
+Dataset Shape: (771, 73)
+2025-12-27 18:52:28,483 - INFO - 
+Column Names & Types:
+Lugar de residencia             object
+1 de enero 2021 Ambos sexos    float64
+1 de enero 2021 Hombres        float64
+1 de enero 2021 Mujeres        float64
+1 de enero 2020 Ambos sexos    float64
+                                ...   
+1 de enero 1999 Hombres        float64
+1 de enero 1999 Mujeres        float64
+1 de enero 1998 Ambos sexos    float64
+1 de enero 1998 Hombres        float64
+1 de enero 1998 Mujeres        float64
+Length: 73, dtype: object
+2025-12-27 18:52:28,531 - INFO - 
+First 5 Rows:
+     Lugar de residencia  1 de enero 2021 Ambos sexos  1 de enero 2021 Hombres  1 de enero 2021 Mujeres  ...  1 de enero 1999 Mujeres  1 de enero 1998 Ambos sexos  1 de enero 1998 Hombres  1 de enero 1998 Mujeres
+0                 España                   47385107.0               23222953.0               24162154.0  ...               20531518.0                   39852651.0               19488465.0               20364186.0
+1                 Aragón                    1326261.0                 655248.0                 671013.0  ...                 602488.0                    1183234.0                 582366.0                 600868.0
+2    Provincia de Huesca                     224264.0                 113607.0                 110657.0  ...                 102294.0                     204956.0                 102854.0                 102102.0
+3    Provincia de Teruel                     134545.0                  68287.0                  66258.0  ...                  67817.0                     136840.0                  68995.0                  67845.0
+4  Provincia de Zaragoza                     967452.0                 473354.0                 494098.0  ...                 432377.0                     841438.0                 410517.0                 430921.0
+
+[5 rows x 73 columns]
+2025-12-27 18:52:28,532 - INFO - 
+Missing Values:
+Lugar de residencia            0
+1 de enero 2021 Ambos sexos    2
+1 de enero 2021 Hombres        2
+1 de enero 2021 Mujeres        2
+1 de enero 2020 Ambos sexos    2
+                              ..
+1 de enero 1999 Hombres        3
+1 de enero 1999 Mujeres        3
+1 de enero 1998 Ambos sexos    4
+1 de enero 1998 Hombres        4
+1 de enero 1998 Mujeres        4
+Length: 73, dtype: int64
+2025-12-27 18:52:28,533 - INFO - 
+Total Missing: 174
+
+2025-12-27 18:52:28,533 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:52:29,184 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:52:29,191 - INFO - Saved raw dataset: households_dataset.csv (771 rows, 5 columns)
+2025-12-27 18:52:29,191 - INFO - 
+Dataset Shape: (771, 5)
+2025-12-27 18:52:29,191 - INFO - 
+Column Names & Types:
+Lugar de residencia        object
+Number_of_households        int64
+Average_household_size    float64
+Number_of_dwellings         int64
+Average_rent_price          int64
+dtype: object
+2025-12-27 18:52:29,200 - INFO - 
+First 5 Rows:
+     Lugar de residencia  Number_of_households  Average_household_size  Number_of_dwellings  Average_rent_price
+0                 España                946522                    2.92                90742                 842
+1                 Aragón                317363                    2.12              1425424                1272
+2    Provincia de Huesca                833423                    2.38              1048646                 477
+3    Provincia de Teruel                598904                    2.15              1204032                 914
+4  Provincia de Zaragoza                117841                    2.79               585826                 899
+2025-12-27 18:52:29,201 - INFO - 
+Missing Values:
+Lugar de residencia       0
+Number_of_households      0
+Average_household_size    0
+Number_of_dwellings       0
+Average_rent_price        0
+dtype: int64
+2025-12-27 18:52:29,202 - INFO - 
+Total Missing: 0
+
+2025-12-27 18:52:29,202 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:52:29,786 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:52:29,798 - INFO - Saved raw dataset: socioeconomic_dataset.csv (771 rows, 6 columns)
+2025-12-27 18:52:29,798 - INFO - 
+Dataset Shape: (771, 6)
+2025-12-27 18:52:29,800 - INFO - 
+Column Names & Types:
+Lugar de residencia     object
+PIB_per_capita           int64
+Employment_rate        float64
+Average_age            float64
+Elderly_index          float64
+Birth_rate_per_1000    float64
+dtype: object
+2025-12-27 18:52:29,809 - INFO - 
+First 5 Rows:
+     Lugar de residencia  PIB_per_capita  Employment_rate  Average_age  Elderly_index  Birth_rate_per_1000
+0                 España           39654            66.96         44.9           96.4                 5.51
+1                 Aragón           31795            65.45         42.3          162.3                 9.36
+2    Provincia de Huesca           16860            76.54         40.0          197.4                11.87
+3    Provincia de Teruel           21390            46.59         42.9           95.9                 6.33
+4  Provincia de Zaragoza           37575            54.83         38.6          151.6                10.55
+2025-12-27 18:52:29,810 - INFO - 
+Missing Values:
+Lugar de residencia    0
+PIB_per_capita         0
+Employment_rate        0
+Average_age            0
+Elderly_index          0
+Birth_rate_per_1000    0
+dtype: int64
+2025-12-27 18:52:29,811 - INFO - 
+Total Missing: 0
+
+2025-12-27 18:52:29,811 - INFO - Finished at: 2025-12-27 18:52:29
+
+2025-12-27 18:55:20,319 - INFO - Started at: 2025-12-27 18:55:20
+
+2025-12-27 18:55:20,319 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:55:20,796 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:55:20,841 - INFO - Saved raw dataset: 0201010101.csv (771 rows, 73 columns)
+2025-12-27 18:55:20,841 - INFO - 
+Dataset Shape: (771, 73)
+2025-12-27 18:55:20,842 - INFO - 
+Column Names & Types:
+Lugar de residencia             object
+1 de enero 2021 Ambos sexos    float64
+1 de enero 2021 Hombres        float64
+1 de enero 2021 Mujeres        float64
+1 de enero 2020 Ambos sexos    float64
+                                ...   
+1 de enero 1999 Hombres        float64
+1 de enero 1999 Mujeres        float64
+1 de enero 1998 Ambos sexos    float64
+1 de enero 1998 Hombres        float64
+1 de enero 1998 Mujeres        float64
+Length: 73, dtype: object
+2025-12-27 18:55:20,843 - INFO - 
+Total Missing: 174
+
+2025-12-27 18:55:20,843 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:55:21,255 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:55:21,270 - INFO - Saved raw dataset: households_dataset.csv (771 rows, 5 columns)
+2025-12-27 18:55:21,270 - INFO - 
+Dataset Shape: (771, 5)
+2025-12-27 18:55:21,272 - INFO - 
+Column Names & Types:
+Lugar de residencia        object
+Number_of_households        int64
+Average_household_size    float64
+Number_of_dwellings         int64
+Average_rent_price          int64
+dtype: object
+2025-12-27 18:55:21,273 - INFO - 
+Total Missing: 0
+
+2025-12-27 18:55:21,273 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:55:21,814 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:55:21,819 - INFO - Saved raw dataset: socioeconomic_dataset.csv (771 rows, 6 columns)
+2025-12-27 18:55:21,820 - INFO - 
+Dataset Shape: (771, 6)
+2025-12-27 18:55:21,820 - INFO - 
+Column Names & Types:
+Lugar de residencia     object
+PIB_per_capita           int64
+Employment_rate        float64
+Average_age            float64
+Elderly_index          float64
+Birth_rate_per_1000    float64
+dtype: object
+2025-12-27 18:55:21,821 - INFO - 
+Total Missing: 0
+
+2025-12-27 18:55:21,821 - INFO - Finished at: 2025-12-27 18:55:21
+
+2025-12-27 18:56:50,818 - INFO - Started at: 2025-12-27 18:56:50
+
+2025-12-27 18:56:50,818 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:56:51,379 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 18:56:51,419 - INFO - Saved raw dataset: 0201010101.csv (771 rows, 73 columns)
+2025-12-27 18:56:51,419 - INFO - 
+Dataset Shape: (771, 73)
+2025-12-27 18:56:51,422 - INFO - 
+Total Missing: 174
+
+2025-12-27 18:56:51,422 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:56:51,888 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 18:56:51,900 - INFO - Saved raw dataset: households_dataset.csv (771 rows, 5 columns)
+2025-12-27 18:56:51,901 - INFO - 
+Dataset Shape: (771, 5)
+2025-12-27 18:56:51,904 - INFO - 
+Total Missing: 0
+
+2025-12-27 18:56:51,904 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:56:52,429 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 18:56:52,442 - INFO - Saved raw dataset: socioeconomic_dataset.csv (771 rows, 6 columns)
+2025-12-27 18:56:52,442 - INFO - 
+Dataset Shape: (771, 6)
+2025-12-27 18:56:52,445 - INFO - 
+Total Missing: 0
+
+2025-12-27 18:56:52,446 - INFO - Finished at: 2025-12-27 18:56:52
+
+2025-12-27 20:04:31,773 - INFO - Started at: 2025-12-27 20:04:31
+
+2025-12-27 20:04:31,773 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 20:04:33,014 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 20:04:33,081 - INFO - Saved raw dataset: 0201010101.csv (771 rows, 73 columns)
+2025-12-27 20:04:33,081 - INFO - 
+Dataset Shape: (771, 73)
+2025-12-27 20:04:33,086 - INFO - 
+Total Missing: 174
+
+2025-12-27 20:04:33,087 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 20:04:33,909 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 20:04:33,921 - INFO - Saved raw dataset: households_dataset.csv (771 rows, 5 columns)
+2025-12-27 20:04:33,921 - INFO - 
+Dataset Shape: (771, 5)
+2025-12-27 20:04:33,924 - INFO - 
+Total Missing: 0
+
+2025-12-27 20:04:33,924 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 20:04:34,767 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 20:04:34,779 - INFO - Saved raw dataset: socioeconomic_dataset.csv (771 rows, 6 columns)
+2025-12-27 20:04:34,779 - INFO - 
+Dataset Shape: (771, 6)
+2025-12-27 20:04:34,782 - INFO - 
+Total Missing: 0
+
+2025-12-27 20:04:34,782 - INFO - Finished at: 2025-12-27 20:04:34
+

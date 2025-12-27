@@ -1,43 +1,5 @@
 Lugar de residencia;Number_of_households;Average_household_size;Number_of_dwellings;Average_rent_price
 España;946522;2.92;90742;842
-Aragón;317363;2.12;1425424;1272
-Provincia de Huesca;833423;2.38;1048646;477
-Provincia de Teruel;598904;2.15;1204032;914
-Provincia de Zaragoza;117841;2.79;585826;899
-- COMARCAS:;170934;2.73;897568;802
-01 La Jacetania;1136270;2.4;761830;820
-02 Alto Gállego;238068;2.71;837226;1337
-03 Sobrarbe;831288;2.46;734875;1087
-04 La Ribagorza;102407;2.78;166750;573
-05 Cinco Villas;852161;2.51;524320;503
-06 Hoya de Huesca / Plana de Uesca;579641;2.47;264178;909
-07 Somontano de Barbastro;706356;2.94;824064;700
-08 Cinca Medio;37683;2.33;299754;698
-09 La Litera / La Llitera;1163667;2.21;851512;531
-10 Los Monegros;118797;2.63;1465761;986
-11 Bajo Cinca / Baix Cinca;325934;2.97;1376236;1367
-12 Tarazona y el Moncayo;286713;2.44;47733;528
-13 Campo de Borja;798583;2.16;1247856;1121
-14 Aranda;465310;2.41;452948;1243
-15 Ribera Alta del Ebro;558242;2.56;750310;1376
-16 Valdejalón;1031488;2.25;1005441;1365
-17 Central;769223;2.69;107811;413
-18 Ribera Baja del Ebro;110373;3.0;1452030;378
-19 Bajo Aragón-Caspe / Baix Aragó-Casp;559988;2.51;497746;721
-20 Comunidad de Calatayud;1011540;2.42;31209;446
-21 Campo de Cariñena;1173304;2.46;1050439;1342
-22 Campo de Belchite;854220;2.2;496329;370
-23 Bajo Martín;915424;2.89;397956;1084
-24 Campo de Daroca;867491;2.47;47189;415
-25 Jiloca;920134;2.45;1314156;952
-26 Cuencas Mineras;89059;2.69;900204;687
-27 Andorra-Sierra de Arcos;833583;2.5;176537;472
-28 Bajo Aragón;443136;2.68;210106;796
-29 Comunidad de Teruel;199303;2.16;1050958;960
-30 Maestrazgo;512162;2.83;1463516;1020
-31 Sierra de Albarracín;474573;2.95;780610;964
-32 Gúdar-Javalambre;330125;2.68;1175941;1246
-33 Matarraña / Matarranya;908383;2.96;1031016;630
 - MUNICIPIOS:;910531;2.24;1474117;945
 44001 Ababuj;1131548;2.53;30385;1052
 50001 Abanto;1104298;2.64;397919;559

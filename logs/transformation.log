@@ -1,0 +1,7 @@
+2025-12-27 20:49:51,582 - INFO - Started at: 2025-12-27 20:49:51
+
+2025-12-27 20:49:51,592 - INFO - Loaded population data with shape: (771, 1)
+2025-12-27 20:51:08,323 - INFO - Started at: 2025-12-27 20:51:08
+
+2025-12-27 20:51:08,333 - INFO - Loaded population data with shape: (771, 73)
+2025-12-27 20:51:08,335 - INFO - Extracted municipality number and name components.
