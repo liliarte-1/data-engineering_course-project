@@ -40,9 +40,19 @@ It is important to save the raw data to compare the before and after to keep tra
 
 4. To manage the missing values, the best metric in population is to impute the media. But, the media that has to be imputed is the media of the municipality, not the global media.
 
-5. After cleaning, now is possible to get the Provinces data, and save it in a different df.
+5. IMPORTANT: 
+The smartest way to study the new data and to be more efficiente and easy to sort, is to reformat it to share the format of the (data_retrieval_simulation/households_dataset.csv), so we will add more rows to remove more columns. This reduces complexity in computation and is key in the project. This has been made after managing the missing values 
+because at least for the developer was easier, however, is better to make this change at the start.
 
-6. Now is possible to create the provinces data for each year. 
+6. After cleaning, now is possible to get the Provinces data, and save it in a different df.
+
+7. Now is possible to create the provinces data for each year. A merge is used to make this possible. Note: The merge is between province code.
+
+8. For the households_dataset, is only necessary to check the missing values and the correct type of the columns, because luckily the table is formated correctly.
+
+9.  province_code is dropped because is no longer necessary and is possible to reobtain it easily.
+
+10. Finally, sorting the columns will make it easier for next steps.
 
 
 

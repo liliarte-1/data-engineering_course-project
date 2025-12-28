@@ -3,7 +3,7 @@
 import logging
 import pandas as pd
 from datetime import datetime
-
+import re
 
 # Configure logging
 logging.basicConfig(
@@ -21,40 +21,35 @@ logging.info(f"Loaded population data with shape: {population_df.shape}")
 
 
 #1
-spain_info_df = pd.read_csv(population_file, sep=",")
-logging.info("Loaded Spain-level aggregated data.")
+# spain_info_df = pd.read_csv(population_file, sep=",")
+# logging.info("Loaded Spain-level aggregated data.")
 
-spain_info_df = spain_info_df[spain_info_df["Lugar de residencia"].str.contains("España")]
-logging.info(f"Filtered Spain rows: {spain_info_df.shape}")
+# spain_info_df = spain_info_df[spain_info_df["Lugar de residencia"].str.contains("España")]
+# logging.info(f"Filtered Spain rows: {spain_info_df.shape}")
 
-#drop España row from population_df
-population_df = population_df[~population_df["Lugar de residencia"].str.contains("España")]
-logging.info(f"Removed Spain rows from population_df. New shape: {population_df.shape}")
+# #drop España row from population_df
+# population_df = population_df[~population_df["Lugar de residencia"].str.contains("España")]
+# logging.info(f"Removed Spain rows from population_df. New shape: {population_df.shape}")
 
 
 #2 
 population_df = population_df[~population_df["Lugar de residencia"].str.contains("MUNICIPIOS")]
 logging.info("Removed MUNICIPIOS header rows.")
 
-population_df["municipality_number"] = population_df["Lugar de residencia"].str.extract(r"(\d+)")
-population_df["municipality_name"] = population_df["Lugar de residencia"].str.extract(r"([A-Za-z]+)")
+population_df["municipality_number"] = population_df["Lugar de residencia"].str.extract(r"^(\d+)")
+population_df["municipality_name"] = population_df["Lugar de residencia"].str.extract(r"^\d+\s*(.*)$")
 logging.info("Extracted municipality number and name components.")
 
 population_df = population_df.drop(columns=["Lugar de residencia"])
 logging.info("Dropped 'Lugar de residencia' column.")
 
 print(population_df.head())
-print(spain_info_df.head())
-
 
 #3
 population_df.columns = population_df.columns.str.replace(
     r"^1 de enero\s+", "", regex=True)
 logging.info("Cleaned date prefixes from population_df column names.")
 
-spain_info_df.columns = spain_info_df.columns.str.replace(
-    r"^1 de enero\s+", "", regex=True)
-logging.info("Cleaned date prefixes from spain_info_df column names.")
 
 
 #4
@@ -75,62 +70,132 @@ population_df[numeric_cols] = population_df[numeric_cols].round(0).astype("Int64
 logging.info("Rounded population values and casted to Int64.")
 
 print(population_df.head())
-print(spain_info_df.head())
 
 
-#5
-# columns to keep for provinces_df
-base_cols = population_df.columns.drop(
-    ["municipality_number", "municipality_name"]
+import re
+import pandas as pd
+
+#5 
+logging.info("Starting long-format transformation (municipalities).")
+
+id_cols = ["municipality_number", "municipality_name"]
+value_cols = [c for c in population_df.columns if c not in id_cols]
+
+year_cols = [
+    c for c in value_cols
+    if re.match(r"^(19\d{2}|20\d{2})\s+(Ambos sexos|Hombres|Mujeres)$", str(c))
+]
+
+logging.info(f"Detected {len(year_cols)} year+sex columns to melt into long format.")
+
+# pivot wide to long: one row per (municipality, year, sex)
+pop_long = population_df.melt(
+    id_vars=id_cols,
+    value_vars=year_cols,
+    var_name="year_sex",
+    value_name="population"
 )
-logging.info(f"Base columns selected for province aggregation: {len(base_cols)} columns.")
 
-provinces_df = pd.DataFrame(columns=base_cols)
-logging.info("Initialized empty provinces_df with base columns.")
+logging.info(f"Melt completed. pop_long shape: {pop_long.shape}")
 
-# add province_name and province_number columns
-provinces_df["province_name"] = pd.Series(dtype="string")
-provinces_df["province_number"] = pd.Series(dtype="int")
-logging.info("Added province_name and province_number columns.")
+# extract year and sex from the melted column
+pop_long["year"] = pop_long["year_sex"].str.extract(r"^(19\d{2}|20\d{2})").astype(int)
+pop_long["sex"] = pop_long["year_sex"].str.replace(
+    r"^(19\d{2}|20\d{2})\s+", "", regex=True
+).str.strip()
 
-provinces_df.loc[0] = {"province_name": "Zaragoza", "province_number": 50000}
-provinces_df.loc[1] = {"province_name": "Huesca", "province_number": 22000}
-provinces_df.loc[2] = {"province_name": "Teruel", "province_number": 44000}
-logging.info("Inserted province reference rows.")
+# drop helper column
+pop_long = pop_long.drop(columns=["year_sex"])
 
-print(provinces_df.head())
+# ensure numeric population with nullable Int64
+pop_long["population"] = pd.to_numeric(pop_long["population"], errors="coerce").astype("Int64")
+
+# safety logs
+logging.info(
+    "Long-format municipality dataset built. "
+    f"Years: {pop_long['year'].min()}-{pop_long['year'].max()}, "
+    f"Sex categories: {sorted(pop_long['sex'].dropna().unique().tolist())}"
+)
+
+print(pop_long.head())
+
 
 
 #6
-# convert municipality_number to numeric to ensure proper division
-population_df["municipality_number"] = pd.to_numeric(
-    population_df["municipality_number"], errors="coerce"
+logging.info("Building provinces reference table (metadata).")
+
+provinces_df = pd.DataFrame([
+    {"province_name": "Zaragoza", "province_number": 50000},
+    {"province_name": "Huesca",   "province_number": 22000},
+    {"province_name": "Teruel",   "province_number": 44000},
+])
+
+provinces_df["province_code"] = (provinces_df["province_number"] // 1000).astype(int)
+
+logging.info(f"Provinces reference table created with {len(provinces_df)} rows.")
+print(provinces_df)
+
+
+#7
+logging.info("Aggregating municipality long dataset to province level (long format).")
+
+# ensure correct numeric types
+pop_long["municipality_number"] = pd.to_numeric(
+    pop_long["municipality_number"], errors="coerce"
 ).astype("Int64")
-logging.info("Converted municipality_number to numeric type.")
+pop_long["population"] = pd.to_numeric(
+    pop_long["population"], errors="coerce"
+).astype("Int64")
 
-provinces_df["province_code"] = provinces_df["province_number"] // 10000
-logging.info("Computed province_code for provinces_df.")
+# Compute province_code from municipality_number:
+# example: 50001 -> 50
+pop_long["province_code"] = (pop_long["municipality_number"] // 1000).astype("Int64")
 
-grouped = (
-    population_df
-    .groupby(population_df["municipality_number"] // 10000)
-    [base_cols]
+# aggregate population by province_code, year
+prov_long = (
+    pop_long
+    .groupby(["province_code", "year", "sex"], as_index=False)["population"]
     .sum()
 )
-logging.info("Aggregated population data by province code.")
 
-for col in base_cols:
-    if col not in ["province_name", "province_number"]:
-        provinces_df[col] = (
-            provinces_df["province_code"]
-            .map(grouped[col])
-        )
+logging.info(f"Province aggregation done. prov_long shape: {prov_long.shape}")
 
-logging.info("Mapped aggregated population values to provinces_df.")
+#8
+# IMPORTANT: merge province names from reference table to final dataset
+prov_long = prov_long.merge(
+    provinces_df[["province_code", "province_name", "province_number"]],
+    on="province_code",
+    how="left"
+)
 
-provinces_df.drop(columns="province_code", inplace=True)
-logging.info("Dropped province_code column.")
+#9 is not needed anymore since we already pivoted above
+pop_long = pop_long.drop(columns=["province_code"])
+prov_long = prov_long.drop(columns=["province_code"])
 
-print(provinces_df.head())
+#10 final clean ordering
+pop_long = pop_long[[
+    "municipality_number", "municipality_name",
+    "year", "sex", "population"
+]].sort_values(["year", "sex"], ignore_index=True)
 
-logging.info(f"Finished at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
+prov_long = prov_long[[
+    "province_number", "province_name",
+    "year", "sex", "population"
+]].sort_values(["year", "sex"], ignore_index=True)
+
+logging.info(
+    "Province-level long dataset built successfully. "
+    f"Years: {pop_long['year'].min()}-{pop_long['year'].max()}."
+)
+
+logging.info(
+    "Province-level long dataset built successfully. "
+    f"Years: {prov_long['year'].min()}-{prov_long['year'].max()}."
+)
+
+print(pop_long.head(12))
+print(prov_long.head(12))
+
+pop_long.to_csv("data/staging/population_municipalities.csv", index=False)
+prov_long.to_csv("data/staging/population_provinces.csv", index=False)
+

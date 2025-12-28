@@ -17,8 +17,9 @@ logging.basicConfig(
 )
 
 urls = ["https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv", 
-        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv",
-        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv"]
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_1998.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_2010.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_2021.csv"]
 
 
 logging.info(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
