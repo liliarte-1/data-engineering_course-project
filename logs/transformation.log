@@ -5,3 +5,156 @@
 
 2025-12-27 20:51:08,333 - INFO - Loaded population data with shape: (771, 73)
 2025-12-27 20:51:08,335 - INFO - Extracted municipality number and name components.
+2025-12-27 20:55:22,889 - INFO - Started at: 2025-12-27 20:55:22
+
+2025-12-27 20:55:22,900 - INFO - Loaded population data with shape: (733, 73)
+2025-12-27 20:55:22,902 - INFO - Extracted municipality number and name components.
+2025-12-27 21:01:33,649 - INFO - Started at: 2025-12-27 21:01:33
+
+2025-12-27 21:01:33,661 - INFO - Loaded population data with shape: (733, 73)
+2025-12-27 21:01:33,674 - INFO - Extracted municipality number and name components.
+2025-12-27 21:02:09,671 - INFO - Started at: 2025-12-27 21:02:09
+
+2025-12-27 21:02:09,684 - INFO - Loaded population data with shape: (733, 73)
+2025-12-27 21:02:09,700 - INFO - Extracted municipality number and name components.
+2025-12-27 21:03:04,614 - INFO - Started at: 2025-12-27 21:03:04
+
+2025-12-27 21:03:04,624 - INFO - Loaded population data with shape: (733, 73)
+2025-12-27 21:03:59,335 - INFO - Started at: 2025-12-27 21:03:59
+
+2025-12-27 21:03:59,347 - INFO - Loaded population data with shape: (733, 73)
+2025-12-27 21:03:59,359 - INFO - Extracted municipality number and name components.
+2025-12-27 21:06:31,377 - INFO - Started at: 2025-12-27 21:06:31
+
+2025-12-27 21:06:31,389 - INFO - Loaded population data with shape: (733, 73)
+2025-12-27 21:06:31,402 - INFO - Extracted municipality number and name components.
+2025-12-28 12:30:39,182 - INFO - Started at: 2025-12-28 12:30:39
+
+2025-12-28 12:30:39,194 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:30:39,217 - INFO - Extracted municipality number and name components.
+2025-12-28 12:31:09,917 - INFO - Started at: 2025-12-28 12:31:09
+
+2025-12-28 12:31:09,927 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:31:09,938 - INFO - Extracted municipality number and name components.
+2025-12-28 12:37:41,874 - INFO - Started at: 2025-12-28 12:37:41
+
+2025-12-28 12:37:41,883 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:37:41,894 - INFO - Extracted municipality number and name components.
+2025-12-28 12:38:14,415 - INFO - Started at: 2025-12-28 12:38:14
+
+2025-12-28 12:38:14,429 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:38:14,442 - INFO - Extracted municipality number and name components.
+2025-12-28 12:40:57,129 - INFO - Started at: 2025-12-28 12:40:57
+
+2025-12-28 12:40:57,138 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:40:57,151 - INFO - Extracted municipality number and name components.
+2025-12-28 12:41:28,107 - INFO - Started at: 2025-12-28 12:41:28
+
+2025-12-28 12:41:28,117 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:41:28,129 - INFO - Extracted municipality number and name components.
+2025-12-28 12:41:42,313 - INFO - Started at: 2025-12-28 12:41:42
+
+2025-12-28 12:41:42,323 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:41:42,335 - INFO - Extracted municipality number and name components.
+2025-12-28 12:43:49,530 - INFO - Started at: 2025-12-28 12:43:49
+
+2025-12-28 12:43:49,542 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:43:49,553 - INFO - Extracted municipality number and name components.
+2025-12-28 12:44:47,462 - INFO - Started at: 2025-12-28 12:44:47
+
+2025-12-28 12:44:47,472 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:44:47,484 - INFO - Extracted municipality number and name components.
+2025-12-28 12:47:30,734 - INFO - Started at: 2025-12-28 12:47:30
+
+2025-12-28 12:47:30,743 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:47:30,754 - INFO - Extracted municipality number and name components.
+2025-12-28 12:49:51,452 - INFO - Started at: 2025-12-28 12:49:51
+
+2025-12-28 12:49:51,462 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 12:49:51,474 - INFO - Extracted municipality number and name components.
+2025-12-28 13:02:29,120 - INFO - Started at: 2025-12-28 13:02:29
+
+2025-12-28 13:02:29,130 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:02:29,141 - INFO - Extracted municipality number and name components.
+2025-12-28 13:04:32,747 - INFO - Started at: 2025-12-28 13:04:32
+
+2025-12-28 13:04:32,757 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:04:32,771 - INFO - Extracted municipality number and name components.
+2025-12-28 13:07:17,915 - INFO - Started at: 2025-12-28 13:07:17
+
+2025-12-28 13:07:17,925 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:07:17,938 - INFO - Extracted municipality number and name components.
+2025-12-28 13:07:58,926 - INFO - Started at: 2025-12-28 13:07:58
+
+2025-12-28 13:07:58,935 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:07:58,947 - INFO - Extracted municipality number and name components.
+2025-12-28 13:09:36,739 - INFO - Started at: 2025-12-28 13:09:36
+
+2025-12-28 13:09:36,747 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:09:36,759 - INFO - Extracted municipality number and name components.
+2025-12-28 13:10:13,713 - INFO - Started at: 2025-12-28 13:10:13
+
+2025-12-28 13:10:13,723 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:10:13,736 - INFO - Extracted municipality number and name components.
+2025-12-28 13:11:33,995 - INFO - Started at: 2025-12-28 13:11:33
+
+2025-12-28 13:11:34,004 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:11:34,015 - INFO - Extracted municipality number and name components.
+2025-12-28 13:14:19,586 - INFO - Started at: 2025-12-28 13:14:19
+
+2025-12-28 13:14:19,596 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:14:19,606 - INFO - Extracted municipality number and name components.
+2025-12-28 13:15:29,486 - INFO - Started at: 2025-12-28 13:15:29
+
+2025-12-28 13:15:29,496 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:15:29,506 - INFO - Extracted municipality number and name components.
+2025-12-28 13:19:12,611 - INFO - Started at: 2025-12-28 13:19:12
+
+2025-12-28 13:19:12,619 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:19:12,630 - INFO - Extracted municipality number and name components.
+2025-12-28 13:21:31,214 - INFO - Started at: 2025-12-28 13:21:31
+
+2025-12-28 13:21:31,223 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:21:31,235 - INFO - Extracted municipality number and name components.
+2025-12-28 13:23:38,152 - INFO - Started at: 2025-12-28 13:23:38
+
+2025-12-28 13:23:38,162 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:23:38,175 - INFO - Extracted municipality number and name components.
+2025-12-28 13:23:59,963 - INFO - Started at: 2025-12-28 13:23:59
+
+2025-12-28 13:23:59,973 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:23:59,986 - INFO - Extracted municipality number and name components.
+2025-12-28 13:25:39,160 - INFO - Started at: 2025-12-28 13:25:39
+
+2025-12-28 13:25:39,173 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:25:39,186 - INFO - Extracted municipality number and name components.
+2025-12-28 13:26:49,077 - INFO - Started at: 2025-12-28 13:26:49
+
+2025-12-28 13:26:49,086 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:26:49,096 - INFO - Extracted municipality number and name components.
+2025-12-28 13:30:25,821 - INFO - Started at: 2025-12-28 13:30:25
+
+2025-12-28 13:30:25,830 - INFO - Loaded population data with shape: (733, 73)
+2025-12-28 13:30:25,837 - INFO - Loaded Spain-level aggregated data.
+2025-12-28 13:30:25,838 - INFO - Filtered Spain rows: (1, 73)
+2025-12-28 13:30:25,839 - INFO - Removed Spain rows from population_df. New shape: (732, 73)
+2025-12-28 13:30:25,839 - INFO - Removed MUNICIPIOS header rows.
+2025-12-28 13:30:25,842 - INFO - Extracted municipality number and name components.
+2025-12-28 13:30:25,842 - INFO - Dropped 'Lugar de residencia' column.
+2025-12-28 13:30:25,906 - INFO - Cleaned date prefixes from population_df column names.
+2025-12-28 13:30:25,906 - INFO - Cleaned date prefixes from spain_info_df column names.
+2025-12-28 13:30:25,906 - INFO - Identified 72 numeric population columns.
+2025-12-28 13:30:25,916 - INFO - Converted population values to numeric, coercing invalid values to NaN.
+2025-12-28 13:30:25,983 - INFO - Imputed missing population values using row-wise means.
+2025-12-28 13:30:25,995 - INFO - Rounded population values and casted to Int64.
+2025-12-28 13:30:26,114 - INFO - Base columns selected for province aggregation: 72 columns.
+2025-12-28 13:30:26,115 - INFO - Initialized empty provinces_df with base columns.
+2025-12-28 13:30:26,115 - INFO - Added province_name and province_number columns.
+2025-12-28 13:30:26,123 - INFO - Inserted province reference rows.
+2025-12-28 13:30:26,148 - INFO - Converted municipality_number to numeric type.
+2025-12-28 13:30:26,148 - INFO - Computed province_code for provinces_df.
+2025-12-28 13:30:26,154 - INFO - Aggregated population data by province code.
+2025-12-28 13:30:26,168 - INFO - Mapped aggregated population values to provinces_df.
+2025-12-28 13:30:26,168 - INFO - Dropped province_code column.
+2025-12-28 13:30:26,196 - INFO - Finished at: 2025-12-28 13:30:26
+

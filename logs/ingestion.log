@@ -273,3 +273,59 @@ Total Missing: 0
 
 2025-12-27 20:04:34,782 - INFO - Finished at: 2025-12-27 20:04:34
 
+2025-12-27 20:55:02,460 - INFO - Started at: 2025-12-27 20:55:02
+
+2025-12-27 20:55:02,460 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 20:55:03,465 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 20:55:03,525 - INFO - Saved raw dataset: 0201010101.csv (733 rows, 73 columns)
+2025-12-27 20:55:03,526 - INFO - 
+Dataset Shape: (733, 73)
+2025-12-27 20:55:03,528 - INFO - 
+Total Missing: 102
+
+2025-12-27 20:55:03,528 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 20:55:04,318 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 20:55:04,328 - INFO - Saved raw dataset: households_dataset.csv (733 rows, 5 columns)
+2025-12-27 20:55:04,328 - INFO - 
+Dataset Shape: (733, 5)
+2025-12-27 20:55:04,330 - INFO - 
+Total Missing: 0
+
+2025-12-27 20:55:04,330 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 20:55:05,307 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 20:55:05,319 - INFO - Saved raw dataset: socioeconomic_dataset.csv (733 rows, 6 columns)
+2025-12-27 20:55:05,319 - INFO - 
+Dataset Shape: (733, 6)
+2025-12-27 20:55:05,321 - INFO - 
+Total Missing: 0
+
+2025-12-27 20:55:05,321 - INFO - Finished at: 2025-12-27 20:55:05
+
+2025-12-27 21:01:28,188 - INFO - Started at: 2025-12-27 21:01:28
+
+2025-12-27 21:01:28,189 - INFO - [1/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 21:01:29,365 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-27 21:01:29,436 - INFO - Saved raw dataset: 0201010101.csv (733 rows, 73 columns)
+2025-12-27 21:01:29,436 - INFO - 
+Dataset Shape: (733, 73)
+2025-12-27 21:01:29,438 - INFO - 
+Total Missing: 102
+
+2025-12-27 21:01:29,438 - INFO - [2/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 21:01:30,396 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-27 21:01:30,407 - INFO - Saved raw dataset: households_dataset.csv (733 rows, 5 columns)
+2025-12-27 21:01:30,407 - INFO - 
+Dataset Shape: (733, 5)
+2025-12-27 21:01:30,408 - INFO - 
+Total Missing: 0
+
+2025-12-27 21:01:30,408 - INFO - [3/3] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 21:01:31,237 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/socioeconomic_dataset.csv
+2025-12-27 21:01:31,248 - INFO - Saved raw dataset: socioeconomic_dataset.csv (733 rows, 6 columns)
+2025-12-27 21:01:31,248 - INFO - 
+Dataset Shape: (733, 6)
+2025-12-27 21:01:31,250 - INFO - 
+Total Missing: 0
+
+2025-12-27 21:01:31,250 - INFO - Finished at: 2025-12-27 21:01:31
+
