@@ -387,3 +387,41 @@ Total Missing: 0
 
 2025-12-28 14:17:29,526 - INFO - Finished at: 2025-12-28 14:17:29
 
+2025-12-28 17:02:40,161 - INFO - Started at: 2025-12-28 17:02:40
+
+2025-12-28 17:02:40,161 - INFO - [1/4] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-28 17:02:40,852 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-28 17:02:41,200 - INFO - Saved raw dataset: 0201010101.csv (733 rows, 73 columns)
+2025-12-28 17:02:41,200 - INFO - 
+Dataset Shape: (733, 73)
+2025-12-28 17:02:41,203 - INFO - 
+Total Missing: 102
+
+2025-12-28 17:02:41,203 - INFO - [2/4] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_1998.csv
+2025-12-28 17:02:41,614 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_1998.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_1998.csv
+2025-12-28 17:02:41,614 - INFO - [3/4] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_2010.csv
+2025-12-28 17:02:42,016 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_2010.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_2010.csv
+2025-12-28 17:02:42,016 - INFO - [4/4] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_2021.csv
+2025-12-28 17:02:42,429 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_2021.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset_2021.csv
+2025-12-28 17:02:42,429 - INFO - Finished at: 2025-12-28 17:02:42
+
+2025-12-28 17:03:03,399 - INFO - Started at: 2025-12-28 17:03:03
+
+2025-12-28 17:03:03,399 - INFO - [1/2] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-28 17:03:03,930 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-28 17:03:04,218 - INFO - Saved raw dataset: 0201010101.csv (733 rows, 73 columns)
+2025-12-28 17:03:04,218 - INFO - 
+Dataset Shape: (733, 73)
+2025-12-28 17:03:04,219 - INFO - 
+Total Missing: 102
+
+2025-12-28 17:03:04,219 - INFO - [2/2] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-28 17:03:05,046 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-28 17:03:05,072 - INFO - Saved raw dataset: households_dataset.csv (17558 rows, 6 columns)
+2025-12-28 17:03:05,072 - INFO - 
+Dataset Shape: (17558, 6)
+2025-12-28 17:03:05,073 - INFO - 
+Total Missing: 0
+
+2025-12-28 17:03:05,073 - INFO - Finished at: 2025-12-28 17:03:05
+

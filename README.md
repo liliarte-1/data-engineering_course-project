@@ -22,7 +22,7 @@ SPAIN
 
 In Spain, postal codes are province-based, meaning that the first two digits identify the province. This allows municipalities to be associated with provinces using the following postal code ranges:
  
-This is used to verify the data and to agrupate it. 
+1. This is used to verify the data and to agrupate it. 
 Zaragoza: 50001 – 50999
 Huesca: 22001 – 22999
 Teruel: 44001 – 44999
@@ -31,7 +31,7 @@ Since the postal code is unique, it will be used as the primary key.
 
 It is important to save the raw data to compare the before and after to keep track of how many values were correct or had changed.
 
-1. There is whole Spain data, which we will keep it in a separate csv, because it might be interesting to study in the future.
+
 2. The name and the postal code are in the same column, so is compulsory to divide it.
     After, the ["Lugar de residencia"] column is not necesary.
     Also, is necessary to drop the MUNICIPIOS line, which is useless and is only to separate from Spain.
@@ -54,6 +54,7 @@ because at least for the developer was easier, however, is better to make this c
 
 10. Finally, sorting the columns will make it easier for next steps.
 
+11. Also, there is whole Spain data, which we will keep it in a separate csv, because it might be interesting to study in the future.
 
 
  
