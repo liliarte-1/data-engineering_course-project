@@ -31,7 +31,6 @@ Since the postal code is unique, it will be used as the primary key.
 
 It is important to save the raw data to compare the before and after to keep track of how many values were correct or had changed.
 
-
 2. The name and the postal code are in the same column, so is compulsory to divide it.
     After, the ["Lugar de residencia"] column is not necesary.
     Also, is necessary to drop the MUNICIPIOS line, which is useless and is only to separate from Spain.
@@ -46,15 +45,22 @@ because at least for the developer was easier, however, is better to make this c
 
 6. After cleaning, now is possible to get the Provinces data, and save it in a different df.
 
-7. Now is possible to create the provinces data for each year. A merge is used to make this possible. Note: The merge is between province code.
+7. Now is possible to create the provinces data for each year. 
 
-8. For the households_dataset, is only necessary to check the missing values and the correct type of the columns, because luckily the table is formated correctly.
+8. A merge is used to make this possible. Note: The merge is between province code.
 
 9.  province_code is dropped because is no longer necessary and is possible to reobtain it easily.
 
-10. Finally, sorting the columns will make it easier for next steps.
+10. Sorting the columns will make it easier for next steps.
 
 11. Also, there is whole Spain data, which we will keep it in a separate csv, because it might be interesting to study in the future.
+
+These steps were made for (data/raw/0201010101.csv). Since the (data/raw/households_dataset.csv) is almost clean, is only necessary to apply a few of the steps above
+
+12. households_dataset transformation. Luckily, is not necessary to impute data since there is not any missing value. 
+
+13. Lastly, adding an ID to each dataset make things easier in the future, if not needed just drop the column.
+
 
 
  

@@ -194,3 +194,55 @@ spain_info_df.to_csv("data/staging/population_spain.csv", index=False)
 pop_long.to_csv("data/staging/population_municipalities.csv", index=False)
 prov_long.to_csv("data/staging/population_provinces.csv", index=False)
 
+
+#12
+
+households_data = "data/raw/households_dataset.csv"
+
+households_df = pd.read_csv(households_data, sep=",")
+logging.info(f"Loaded households data with shape: {households_df.shape}")
+
+print(households_df.columns.tolist())
+
+households_df["municipality_number"] = households_df["Lugar de residencia"].str.extract(r"^(\d+)")
+households_df["municipality_name"] = households_df["Lugar de residencia"].str.extract(r"^\d+\s*(.*)$")
+logging.info("Extracted municipality number and name components.")
+
+households_df = households_df.drop(columns=["Lugar de residencia"])
+logging.info("Dropped 'Lugar de residencia' column.")
+
+
+# Provinces ref
+provinces_households_df = pd.DataFrame([
+    {"province_name": "Zaragoza", "province_number": 50000},
+    {"province_name": "Huesca",   "province_number": 22000},
+    {"province_name": "Teruel",   "province_number": 44000},
+])
+provinces_households_df["province_code"] = (provinces_households_df["province_number"] // 1000).astype(int)
+
+# conversion to numeric
+households_df["municipality_number"] = pd.to_numeric(households_df["municipality_number"], errors="coerce").astype("Int64")
+for col in ["number_of_households","average_household_size","number_of_dwellings","average_rent_price"]:
+    households_df[col] = pd.to_numeric(households_df[col], errors="coerce").astype("Float64")
+
+households_df["province_code"] = (households_df["municipality_number"] // 1000).astype("Int64")
+
+cols = ["number_of_households","average_household_size","number_of_dwellings","average_rent_price"]
+prov_households = (
+    households_df
+    .groupby(["province_code", "year"], as_index=False)[cols]
+    .mean()
+)
+
+prov_households = prov_households.merge(
+    provinces_households_df[["province_code", "province_name", "province_number"]],
+    on="province_code",
+    how="left"
+)
+
+prov_households = prov_households[[
+    "province_number", "province_name", "year",
+    "number_of_households","average_household_size","number_of_dwellings","average_rent_price"
+]].sort_values(["year"], ignore_index=True)
+
+print(prov_households.head(12))

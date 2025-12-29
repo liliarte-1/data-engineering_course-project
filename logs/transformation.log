@@ -866,3 +866,137 @@
 2025-12-28 17:32:09,377 - INFO - Province aggregation done. prov_long shape: (216, 4)
 2025-12-28 17:32:09,388 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
 2025-12-28 17:32:09,388 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:46:06,299 - INFO - Started at: 2025-12-29 13:46:06
+
+2025-12-29 13:46:06,309 - INFO - Loaded population data with shape: (733, 73)
+2025-12-29 13:46:06,310 - INFO - Removed MUNICIPIOS header rows.
+2025-12-29 13:46:06,312 - INFO - Extracted municipality number and name components.
+2025-12-29 13:46:06,312 - INFO - Dropped 'Lugar de residencia' column.
+2025-12-29 13:46:06,313 - INFO - Cleaned date prefixes from population_df column names.
+2025-12-29 13:46:06,313 - INFO - Identified 72 numeric population columns.
+2025-12-29 13:46:06,318 - INFO - Converted population values to numeric, coercing invalid values to NaN.
+2025-12-29 13:46:06,367 - INFO - Imputed missing population values using row-wise means.
+2025-12-29 13:46:06,376 - INFO - Rounded population values and casted to Int64.
+2025-12-29 13:46:06,376 - INFO - Starting long-format transformation (municipalities).
+2025-12-29 13:46:06,376 - INFO - Detected 72 year+sex columns to melt into long format.
+2025-12-29 13:46:06,381 - INFO - Melt completed. pop_long shape: (52704, 4)
+2025-12-29 13:46:06,422 - INFO - Long-format municipality dataset built. Years: 1998-2021, Sex categories: ['Ambos sexos', 'Hombres', 'Mujeres']
+2025-12-29 13:46:06,424 - INFO - Loaded Spain-level aggregated data.
+2025-12-29 13:46:06,434 - INFO - Filtered Spain rows: (72, 5)
+2025-12-29 13:46:06,443 - INFO - Removed Spain rows from population_df. New shape: (732, 74)
+2025-12-29 13:46:06,449 - INFO - Building provinces reference table (metadata).
+2025-12-29 13:46:06,451 - INFO - Provinces reference table created with 3 rows.
+2025-12-29 13:46:06,454 - INFO - Aggregating municipality long dataset to province level (long format).
+2025-12-29 13:46:06,472 - INFO - Province aggregation done. prov_long shape: (216, 4)
+2025-12-29 13:46:06,488 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:46:06,488 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:46:06,583 - INFO - Loaded households data with shape: (17558, 6)
+2025-12-29 13:46:06,586 - INFO - Removed MUNICIPIOS header rows.
+2025-12-29 13:46:06,612 - INFO - Extracted municipality number and name components.
+2025-12-29 13:46:06,613 - INFO - Dropped 'Lugar de residencia' column.
+2025-12-29 13:46:06,613 - INFO - Building provinces household reference table (metadata).
+2025-12-29 13:46:06,613 - INFO - Provinces household reference table created with 3 rows.
+2025-12-29 13:49:48,574 - INFO - Started at: 2025-12-29 13:49:48
+
+2025-12-29 13:49:48,582 - INFO - Loaded population data with shape: (733, 73)
+2025-12-29 13:49:48,583 - INFO - Removed MUNICIPIOS header rows.
+2025-12-29 13:49:48,584 - INFO - Extracted municipality number and name components.
+2025-12-29 13:49:48,585 - INFO - Dropped 'Lugar de residencia' column.
+2025-12-29 13:49:48,585 - INFO - Cleaned date prefixes from population_df column names.
+2025-12-29 13:49:48,585 - INFO - Identified 72 numeric population columns.
+2025-12-29 13:49:48,591 - INFO - Converted population values to numeric, coercing invalid values to NaN.
+2025-12-29 13:49:48,639 - INFO - Imputed missing population values using row-wise means.
+2025-12-29 13:49:48,652 - INFO - Rounded population values and casted to Int64.
+2025-12-29 13:49:48,652 - INFO - Starting long-format transformation (municipalities).
+2025-12-29 13:49:48,652 - INFO - Detected 72 year+sex columns to melt into long format.
+2025-12-29 13:49:48,658 - INFO - Melt completed. pop_long shape: (52704, 4)
+2025-12-29 13:49:48,702 - INFO - Long-format municipality dataset built. Years: 1998-2021, Sex categories: ['Ambos sexos', 'Hombres', 'Mujeres']
+2025-12-29 13:49:48,704 - INFO - Loaded Spain-level aggregated data.
+2025-12-29 13:49:48,711 - INFO - Filtered Spain rows: (72, 5)
+2025-12-29 13:49:48,720 - INFO - Removed Spain rows from population_df. New shape: (732, 74)
+2025-12-29 13:49:48,725 - INFO - Building provinces reference table (metadata).
+2025-12-29 13:49:48,725 - INFO - Provinces reference table created with 3 rows.
+2025-12-29 13:49:48,728 - INFO - Aggregating municipality long dataset to province level (long format).
+2025-12-29 13:49:48,745 - INFO - Province aggregation done. prov_long shape: (216, 4)
+2025-12-29 13:49:48,755 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:49:48,755 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:49:48,820 - INFO - Loaded households data with shape: (17558, 1)
+2025-12-29 13:50:02,709 - INFO - Started at: 2025-12-29 13:50:02
+
+2025-12-29 13:50:02,719 - INFO - Loaded population data with shape: (733, 73)
+2025-12-29 13:50:02,720 - INFO - Removed MUNICIPIOS header rows.
+2025-12-29 13:50:02,721 - INFO - Extracted municipality number and name components.
+2025-12-29 13:50:02,721 - INFO - Dropped 'Lugar de residencia' column.
+2025-12-29 13:50:02,722 - INFO - Cleaned date prefixes from population_df column names.
+2025-12-29 13:50:02,722 - INFO - Identified 72 numeric population columns.
+2025-12-29 13:50:02,728 - INFO - Converted population values to numeric, coercing invalid values to NaN.
+2025-12-29 13:50:02,779 - INFO - Imputed missing population values using row-wise means.
+2025-12-29 13:50:02,788 - INFO - Rounded population values and casted to Int64.
+2025-12-29 13:50:02,788 - INFO - Starting long-format transformation (municipalities).
+2025-12-29 13:50:02,788 - INFO - Detected 72 year+sex columns to melt into long format.
+2025-12-29 13:50:02,793 - INFO - Melt completed. pop_long shape: (52704, 4)
+2025-12-29 13:50:02,836 - INFO - Long-format municipality dataset built. Years: 1998-2021, Sex categories: ['Ambos sexos', 'Hombres', 'Mujeres']
+2025-12-29 13:50:02,839 - INFO - Loaded Spain-level aggregated data.
+2025-12-29 13:50:02,846 - INFO - Filtered Spain rows: (72, 5)
+2025-12-29 13:50:02,855 - INFO - Removed Spain rows from population_df. New shape: (732, 74)
+2025-12-29 13:50:02,861 - INFO - Building provinces reference table (metadata).
+2025-12-29 13:50:02,862 - INFO - Provinces reference table created with 3 rows.
+2025-12-29 13:50:02,864 - INFO - Aggregating municipality long dataset to province level (long format).
+2025-12-29 13:50:02,880 - INFO - Province aggregation done. prov_long shape: (216, 4)
+2025-12-29 13:50:02,889 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:50:02,889 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:50:02,951 - INFO - Loaded households data with shape: (17558, 1)
+2025-12-29 13:50:44,446 - INFO - Started at: 2025-12-29 13:50:44
+
+2025-12-29 13:50:44,454 - INFO - Loaded population data with shape: (733, 73)
+2025-12-29 13:50:44,455 - INFO - Removed MUNICIPIOS header rows.
+2025-12-29 13:50:44,456 - INFO - Extracted municipality number and name components.
+2025-12-29 13:50:44,457 - INFO - Dropped 'Lugar de residencia' column.
+2025-12-29 13:50:44,457 - INFO - Cleaned date prefixes from population_df column names.
+2025-12-29 13:50:44,457 - INFO - Identified 72 numeric population columns.
+2025-12-29 13:50:44,462 - INFO - Converted population values to numeric, coercing invalid values to NaN.
+2025-12-29 13:50:44,509 - INFO - Imputed missing population values using row-wise means.
+2025-12-29 13:50:44,519 - INFO - Rounded population values and casted to Int64.
+2025-12-29 13:50:44,519 - INFO - Starting long-format transformation (municipalities).
+2025-12-29 13:50:44,519 - INFO - Detected 72 year+sex columns to melt into long format.
+2025-12-29 13:50:44,523 - INFO - Melt completed. pop_long shape: (52704, 4)
+2025-12-29 13:50:44,563 - INFO - Long-format municipality dataset built. Years: 1998-2021, Sex categories: ['Ambos sexos', 'Hombres', 'Mujeres']
+2025-12-29 13:50:44,565 - INFO - Loaded Spain-level aggregated data.
+2025-12-29 13:50:44,572 - INFO - Filtered Spain rows: (72, 5)
+2025-12-29 13:50:44,580 - INFO - Removed Spain rows from population_df. New shape: (732, 74)
+2025-12-29 13:50:44,585 - INFO - Building provinces reference table (metadata).
+2025-12-29 13:50:44,586 - INFO - Provinces reference table created with 3 rows.
+2025-12-29 13:50:44,589 - INFO - Aggregating municipality long dataset to province level (long format).
+2025-12-29 13:50:44,603 - INFO - Province aggregation done. prov_long shape: (216, 4)
+2025-12-29 13:50:44,614 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:50:44,614 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:50:44,673 - INFO - Loaded households data with shape: (17558, 6)
+2025-12-29 13:50:44,692 - INFO - Extracted municipality number and name components.
+2025-12-29 13:50:44,693 - INFO - Dropped 'Lugar de residencia' column.
+2025-12-29 13:52:07,389 - INFO - Started at: 2025-12-29 13:52:07
+
+2025-12-29 13:52:07,396 - INFO - Loaded population data with shape: (733, 73)
+2025-12-29 13:52:07,397 - INFO - Removed MUNICIPIOS header rows.
+2025-12-29 13:52:07,399 - INFO - Extracted municipality number and name components.
+2025-12-29 13:52:07,399 - INFO - Dropped 'Lugar de residencia' column.
+2025-12-29 13:52:07,399 - INFO - Cleaned date prefixes from population_df column names.
+2025-12-29 13:52:07,399 - INFO - Identified 72 numeric population columns.
+2025-12-29 13:52:07,404 - INFO - Converted population values to numeric, coercing invalid values to NaN.
+2025-12-29 13:52:07,453 - INFO - Imputed missing population values using row-wise means.
+2025-12-29 13:52:07,462 - INFO - Rounded population values and casted to Int64.
+2025-12-29 13:52:07,462 - INFO - Starting long-format transformation (municipalities).
+2025-12-29 13:52:07,462 - INFO - Detected 72 year+sex columns to melt into long format.
+2025-12-29 13:52:07,466 - INFO - Melt completed. pop_long shape: (52704, 4)
+2025-12-29 13:52:07,506 - INFO - Long-format municipality dataset built. Years: 1998-2021, Sex categories: ['Ambos sexos', 'Hombres', 'Mujeres']
+2025-12-29 13:52:07,508 - INFO - Loaded Spain-level aggregated data.
+2025-12-29 13:52:07,515 - INFO - Filtered Spain rows: (72, 5)
+2025-12-29 13:52:07,524 - INFO - Removed Spain rows from population_df. New shape: (732, 74)
+2025-12-29 13:52:07,529 - INFO - Building provinces reference table (metadata).
+2025-12-29 13:52:07,530 - INFO - Provinces reference table created with 3 rows.
+2025-12-29 13:52:07,533 - INFO - Aggregating municipality long dataset to province level (long format).
+2025-12-29 13:52:07,547 - INFO - Province aggregation done. prov_long shape: (216, 4)
+2025-12-29 13:52:07,557 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:52:07,557 - INFO - Province-level long dataset built successfully. Years: 1998-2021.
+2025-12-29 13:52:07,616 - INFO - Loaded households data with shape: (17558, 6)
+2025-12-29 13:52:07,637 - INFO - Extracted municipality number and name components.
+2025-12-29 13:52:07,637 - INFO - Dropped 'Lugar de residencia' column.
