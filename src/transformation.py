@@ -216,19 +216,20 @@ logging.info("Dropped 'Lugar de residencia' column.")
 spain_info_households_df = households_df.copy()
 logging.info("Loaded Spain-level aggregated data.")
 
-mask_spain = spain_info_households_df["municipality_name"].fillna("").str.contains("España")
-spain_info_households_df = spain_info_households_df[mask_spain]
-logging.info(f"Filtered Spain rows: {spain_info_households_df.shape}")
+print(spain_info_households_df.head(12))
 
+spain_info_households_df = spain_info_households_df[
+    spain_info_households_df["municipality_name"].str.contains("España", na=False)
+]
+logging.info(f"Filtered Spain rows: {spain_info_households_df.shape}")
 spain_info_households_df = spain_info_households_df.dropna(how="all").reset_index(drop=True)
 
-# drop España rows from households_df
-mask_spain_main = households_df["municipality_name"].fillna("").str.contains("España")
-households_df = households_df[~mask_spain_main]
+print(spain_info_households_df.head(12))
+
+#drop España row from population_df
+households_df = households_df[~households_df["municipality_name"].str.contains("España", na=False)]
 logging.info(f"Removed Spain rows from households_df. New shape: {households_df.shape}")
-
 households_df = households_df.dropna(how="all").reset_index(drop=True)
-
 
 # Provinces ref
 provinces_households_df = pd.DataFrame([
