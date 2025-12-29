@@ -197,7 +197,6 @@ logging.info("Saved cleaned population datasets to staging area.")
 
 
 #12
-
 households_data = "data/raw/households_dataset.csv"
 
 households_df = pd.read_csv(households_data, sep=",")
@@ -212,7 +211,6 @@ logging.info("Extracted municipality number and name components.")
 households_df = households_df.drop(columns=["Lugar de residencia"])
 logging.info("Dropped 'Lugar de residencia' column.")
 
-#11
 spain_info_households_df = households_df.copy()
 logging.info("Loaded Spain-level aggregated data.")
 
