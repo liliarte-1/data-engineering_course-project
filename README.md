@@ -57,7 +57,7 @@ because at least for the developer was easier, however, is better to make this c
 
 These steps were made for (data/raw/0201010101.csv). Since the (data/raw/households_dataset.csv) is almost clean, is only necessary to apply a few of the steps above
 
-12. households_dataset transformation. Luckily, is not necessary to impute data since there is not any missing value. 
+12. households_dataset transformation. Luckily, is not necessary to impute data since there is not any missing value. IMPORTANT: renaming the variables should be necessary to pivot, luckily in this case is not necessary
 
 13. Lastly, adding an ID to each dataset make things easier in the future, if not needed just drop the column.
 

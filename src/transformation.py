@@ -184,15 +184,16 @@ logging.info(
     f"Years: {prov_long['year'].min()}-{prov_long['year'].max()}."
 )
 
-print(pop_long.head(12))
-print(prov_long.head(12))
-print(spain_info_df.head(12))
-
+# print(pop_long.head(12))
+# print(prov_long.head(12))
+# print(spain_info_df.head(12))
 
 
 spain_info_df.to_csv("data/staging/population_spain.csv", index=False)
 pop_long.to_csv("data/staging/population_municipalities.csv", index=False)
 prov_long.to_csv("data/staging/population_provinces.csv", index=False)
+
+logging.info("Saved cleaned population datasets to staging area.")
 
 
 #12
@@ -210,6 +211,23 @@ logging.info("Extracted municipality number and name components.")
 
 households_df = households_df.drop(columns=["Lugar de residencia"])
 logging.info("Dropped 'Lugar de residencia' column.")
+
+#11
+spain_info_households_df = households_df.copy()
+logging.info("Loaded Spain-level aggregated data.")
+
+mask_spain = spain_info_households_df["municipality_name"].fillna("").str.contains("España")
+spain_info_households_df = spain_info_households_df[mask_spain]
+logging.info(f"Filtered Spain rows: {spain_info_households_df.shape}")
+
+spain_info_households_df = spain_info_households_df.dropna(how="all").reset_index(drop=True)
+
+# drop España rows from households_df
+mask_spain_main = households_df["municipality_name"].fillna("").str.contains("España")
+households_df = households_df[~mask_spain_main]
+logging.info(f"Removed Spain rows from households_df. New shape: {households_df.shape}")
+
+households_df = households_df.dropna(how="all").reset_index(drop=True)
 
 
 # Provinces ref
@@ -234,15 +252,29 @@ prov_households = (
     .mean()
 )
 
+# merge province names
 prov_households = prov_households.merge(
     provinces_households_df[["province_code", "province_name", "province_number"]],
     on="province_code",
     how="left"
 )
+logging.info(f"Province-level households aggregation done. prov_households shape: {prov_households.shape}")
 
 prov_households = prov_households[[
     "province_number", "province_name", "year",
     "number_of_households","average_household_size","number_of_dwellings","average_rent_price"
 ]].sort_values(["year"], ignore_index=True)
 
+households_df = households_df.drop(columns=["province_code"])
+households_df = households_df[[
+    "municipality_number", "municipality_name", "year",
+    "number_of_households","average_household_size","number_of_dwellings","average_rent_price"
+]].sort_values(["year"], ignore_index=True)
+
+
 print(prov_households.head(12))
+households_df.to_csv("data/staging/households_municipalities.csv", index=False)
+prov_households.to_csv("data/staging/households_provinces.csv", index=False)
+spain_info_households_df.to_csv("data/staging/households_spain.csv", index=False)
+
+logging.info("Saved cleaned households datasets to staging area.")
