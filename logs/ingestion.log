@@ -505,3 +505,23 @@ Total Missing: 0
 
 2025-12-29 14:11:35,204 - INFO - Finished at: 2025-12-29 14:11:35
 
+2025-12-29 14:36:31,012 - INFO - Started at: 2025-12-29 14:36:31
+
+2025-12-29 14:36:31,012 - INFO - [1/2] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-29 14:36:31,567 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv
+2025-12-29 14:36:31,592 - INFO - Saved raw dataset: 0201010101.csv (733 rows, 73 columns)
+2025-12-29 14:36:31,592 - INFO - 
+Dataset Shape: (733, 73)
+2025-12-29 14:36:31,593 - INFO - 
+Total Missing: 102
+
+2025-12-29 14:36:31,593 - INFO - [2/2] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-29 14:36:32,310 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv
+2025-12-29 14:36:32,337 - INFO - Saved raw dataset: households_dataset.csv (17558 rows, 6 columns)
+2025-12-29 14:36:32,337 - INFO - 
+Dataset Shape: (17558, 6)
+2025-12-29 14:36:32,338 - INFO - 
+Total Missing: 0
+
+2025-12-29 14:36:32,338 - INFO - Finished at: 2025-12-29 14:36:32
+

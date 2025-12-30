@@ -40,8 +40,7 @@ It is important to save the raw data to compare the before and after to keep tra
 4. To manage the missing values, the best metric in population is to impute the media. But, the media that has to be imputed is the media of the municipality, not the global media.
 
 5. IMPORTANT: 
-The smartest way to study the new data and to be more efficiente and easy to sort, is to reformat it to share the format of the (data_retrieval_simulation/households_dataset.csv), so we will add more rows to remove more columns. This reduces complexity in computation and is key in the project. This has been made after managing the missing values 
-because at least for the developer was easier, however, is better to make this change at the start.
+The smartest way to study the new data and to be more efficiente and easy to sort, is to reformat it to share the format of the (data_retrieval_simulation/households_dataset.csv), so we will add more rows to remove more columns. This reduces complexity in computation and is key in the project. This has been made after managing the missing values because at least for the developer was easier, however, is better to make this change at the start.
 
 6. After cleaning, now is possible to get the Provinces data, and save it in a different df.
 
@@ -59,8 +58,31 @@ These steps were made for (data/raw/0201010101.csv). Since the (data/raw/househo
 
 12. households_dataset transformation. Luckily, is not necessary to impute data since there is not any missing value. IMPORTANT: renaming the variables should be necessary to pivot, luckily in this case is not necessary
 
+WAREHOUSE
+For the warehouse, an OLAP (Online Analytical Processing) model will be implemented, because the goal is to study the business intelligence and analytics. Therefore, denormalized data will be used. The OLTP will not be covered, since in this project there is no online transaction processing and is not necessary to cover the requirements. However, in a real bussiness project, the OLTP model is crucial too, and both models are related even if the goal of each one is different.
 
 
+The datasets have low complexity, so and Star Schema is the best option, because it has simple structure​, fast query performance​, denormalized dimensions​, easy for business users to understand​
+
+To connect to Azure Services, is necessary to install the ODBC Driver 18 for SQL Server
+Search in google: ODBC Driver 18 for SQL Server Microsoft go inside learn.microsoft.com...
+In downloads, install the .msi for your pc specs.
+
+Install pyodbc and sqlalchemy in the virtual environment that is being used. This is needed to make Python communicate with Azure SQL
+
+Conection Data:
+user: dwadmin
+password: usj2526.
+server: srv-dw-liliarte-01.database.windows.net
+dw: dw_final_project
+
+Install the "SQL Server (mssql)" extension for Visual Studio Code.
+
+If the connection is not appearing already, just create a new one putting the data above. If this part is not clear to do on the teacher's computer, it will be presented and justified in the oral presentation. Therefore, since now, the changes outside this repo will be added in photos trying to explain in in the best way possible.
+
+Now it is possible to create the SQL Schema. It is created in (data/warehouse/schema.sql). Now facts and dimensions are created in the Azure DW, refresh if it does not appear.
+
+Now the environment is ready to INSERT data with the warehouse.py script. This part is key in the project because now is possible to autommatice the INSERTS with Python.
 
  
 
