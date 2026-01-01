@@ -24,3 +24,5 @@ try:
 except Exception as e:
     print("❌ Error de conexión")
     print(e)
+
+
