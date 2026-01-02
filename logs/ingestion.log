@@ -525,3 +525,557 @@ Total Missing: 0
 
 2025-12-29 14:36:32,338 - INFO - Finished at: 2025-12-29 14:36:32
 
+2026-01-02 17:41:44,456 - INFO - Started at: 2026-01-02 17:41:44
+
+2026-01-02 17:41:44,457 - INFO - [1/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:41:45,231 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/economic_sector_province.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:41:45,231 - INFO - [2/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:41:45,934 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/death_causes_province.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:41:45,934 - INFO - [3/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2008.csv
+2026-01-02 17:41:46,697 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2008.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2008.csv
+2026-01-02 17:41:46,697 - INFO - [4/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2009.csv,https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2010.csv
+2026-01-02 17:41:47,685 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2009.csv,https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2010.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2009.csv,https:/raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2010.csv
+2026-01-02 17:41:47,685 - INFO - [5/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2011.csv
+2026-01-02 17:41:48,370 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2011.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2011.csv
+2026-01-02 17:41:48,371 - INFO - [6/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2012.csv
+2026-01-02 17:41:49,215 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2012.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2012.csv
+2026-01-02 17:41:49,215 - INFO - [7/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2013.csv
+2026-01-02 17:41:49,728 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2013.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2013.csv
+2026-01-02 17:41:49,728 - INFO - [8/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2014.csv
+2026-01-02 17:41:50,340 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2014.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2014.csv
+2026-01-02 17:41:50,340 - INFO - [9/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2015.csv
+2026-01-02 17:41:50,954 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2015.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2015.csv
+2026-01-02 17:41:50,954 - INFO - [10/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2016.csv
+2026-01-02 17:41:51,640 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2016.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2016.csv
+2026-01-02 17:41:51,640 - INFO - [11/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2017.csv
+2026-01-02 17:41:52,293 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2017.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2017.csv
+2026-01-02 17:41:52,293 - INFO - [12/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2018.csv
+2026-01-02 17:41:52,801 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2018.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2018.csv
+2026-01-02 17:41:52,802 - INFO - [13/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2019.csv
+2026-01-02 17:41:53,546 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2019.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2019.csv
+2026-01-02 17:41:53,546 - INFO - [14/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2020.csv
+2026-01-02 17:41:54,234 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2020.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2020.csv
+2026-01-02 17:41:54,234 - INFO - [15/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2021.csv
+2026-01-02 17:41:54,877 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2021.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2021.csv
+2026-01-02 17:41:54,877 - INFO - [16/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2022.csv
+2026-01-02 17:41:55,375 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2022.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2022.csv
+2026-01-02 17:41:55,375 - INFO - [17/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2023.csv
+2026-01-02 17:41:55,874 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2023.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2023.csv
+2026-01-02 17:41:55,874 - INFO - [18/18] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2024.csv
+2026-01-02 17:41:56,589 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2024.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2024.csv
+2026-01-02 17:41:56,589 - INFO - Finished at: 2026-01-02 17:41:56
+
+2026-01-02 17:43:08,299 - INFO - Started at: 2026-01-02 17:43:08
+
+2026-01-02 17:43:08,299 - INFO - [1/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:43:08,889 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/economic_sector_province.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:43:08,890 - INFO - [2/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:43:09,573 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/death_causes_province.csv: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:43:09,573 - INFO - [3/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:43:10,070 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2008.xls: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:43:10,070 - INFO - [4/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:43:10,605 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2009.xls: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:43:10,606 - INFO - [5/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:43:11,240 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2010.xls: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:43:11,240 - INFO - [6/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:43:11,956 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2011.xls: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:43:11,956 - INFO - [7/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:43:12,635 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2012.xls: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:43:12,635 - INFO - [8/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:43:13,393 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2013.xls: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:43:13,393 - INFO - [9/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:43:14,121 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2014.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:43:14,121 - INFO - [10/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:43:15,030 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2015.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:43:15,031 - INFO - [11/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:43:15,734 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2016.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:43:15,734 - INFO - [12/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:43:16,388 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2017.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:43:16,388 - INFO - [13/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:43:17,074 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2018.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:43:17,074 - INFO - [14/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:43:17,793 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2019.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:43:17,793 - INFO - [15/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:43:18,518 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2020.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:43:18,518 - INFO - [16/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:43:19,128 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2021.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:43:19,128 - INFO - [17/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:43:19,731 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2022.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:43:19,731 - INFO - [18/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:43:20,248 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2023.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:43:20,249 - INFO - [19/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:43:20,866 - ERROR - Network error fetching https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2024.xlsx: 404 Client Error: Not Found for url: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:43:20,866 - INFO - Finished at: 2026-01-02 17:43:20
+
+2026-01-02 17:44:51,809 - INFO - Started at: 2026-01-02 17:44:51
+
+2026-01-02 17:44:51,809 - INFO - [1/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:44:53,539 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:44:53,853 - INFO - Saved raw dataset: death_causes_province.csv (131220 rows, 5 columns)
+2026-01-02 17:44:53,854 - INFO - 
+Dataset Shape: (131220, 5)
+2026-01-02 17:44:53,863 - INFO - 
+Total Missing: 0
+
+2026-01-02 17:44:53,864 - INFO - [2/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:44:54,590 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:44:54,634 - INFO - Saved raw dataset: economic_sector_province.csv (18815 rows, 4 columns)
+2026-01-02 17:44:54,634 - INFO - 
+Dataset Shape: (18815, 4)
+2026-01-02 17:44:54,637 - INFO - 
+Total Missing: 0
+
+2026-01-02 17:44:54,638 - INFO - [3/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:44:55,550 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:44:56,884 - INFO - Saved raw dataset: pobmun2008.xls (279046 rows, 19 columns)
+2026-01-02 17:44:56,884 - INFO - 
+Dataset Shape: (279046, 19)
+2026-01-02 17:44:56,901 - INFO - 
+Total Missing: 5238053
+
+2026-01-02 17:44:56,901 - INFO - [4/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:44:57,979 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:44:59,134 - INFO - Saved raw dataset: pobmun2009.xls (149071 rows, 35 columns)
+2026-01-02 17:44:59,134 - INFO - 
+Dataset Shape: (149071, 35)
+2026-01-02 17:44:59,145 - INFO - 
+Total Missing: 5200753
+
+2026-01-02 17:44:59,145 - INFO - [5/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:45:00,200 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:45:00,673 - INFO - Saved raw dataset: pobmun2010.xls (143877 rows, 2 columns)
+2026-01-02 17:45:00,674 - INFO - 
+Dataset Shape: (143877, 2)
+2026-01-02 17:45:00,678 - INFO - 
+Total Missing: 287752
+
+2026-01-02 17:45:00,678 - INFO - [6/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:45:01,660 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:45:02,887 - INFO - Saved raw dataset: pobmun2011.xls (142763 rows, 36 columns)
+2026-01-02 17:45:02,887 - INFO - 
+Dataset Shape: (142763, 36)
+2026-01-02 17:45:02,898 - INFO - 
+Total Missing: 5110624
+
+2026-01-02 17:45:02,898 - INFO - [7/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:45:04,179 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:45:05,373 - INFO - Saved raw dataset: pobmun2012.xls (327732 rows, 18 columns)
+2026-01-02 17:45:05,373 - INFO - 
+Dataset Shape: (327732, 18)
+2026-01-02 17:45:05,394 - INFO - 
+Total Missing: 5784933
+
+2026-01-02 17:45:05,394 - INFO - [8/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:45:06,230 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:45:06,306 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:06,306 - INFO - [9/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:45:07,397 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:45:07,486 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:07,487 - INFO - [10/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:45:08,473 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:45:08,561 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:08,561 - INFO - [11/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:45:09,362 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:45:09,417 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:09,417 - INFO - [12/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:45:10,290 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:45:10,368 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:10,370 - INFO - [13/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:45:11,197 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:45:11,248 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:11,248 - INFO - [14/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:45:12,325 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:45:12,374 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:12,374 - INFO - [15/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:45:13,492 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:45:13,597 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:13,597 - INFO - [16/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:45:14,439 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:45:14,490 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:14,490 - INFO - [17/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:45:15,465 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:45:15,522 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:15,523 - INFO - [18/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:45:16,775 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:45:16,831 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:16,831 - INFO - [19/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:45:17,838 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:45:17,894 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:17,895 - INFO - Finished at: 2026-01-02 17:45:17
+
+2026-01-02 17:45:44,174 - INFO - Started at: 2026-01-02 17:45:44
+
+2026-01-02 17:45:44,175 - INFO - [1/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:45:45,063 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:45:47,606 - INFO - Saved raw dataset: death_causes_province.csv (87750 rows, 1 columns)
+2026-01-02 17:45:47,606 - INFO - 
+Dataset Shape: (87750, 1)
+2026-01-02 17:45:47,609 - INFO - 
+Total Missing: 0
+
+2026-01-02 17:45:47,609 - INFO - [2/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:45:48,329 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:45:48,396 - INFO - Saved raw dataset: economic_sector_province.csv (17529 rows, 1 columns)
+2026-01-02 17:45:48,396 - INFO - 
+Dataset Shape: (17529, 1)
+2026-01-02 17:45:48,397 - INFO - 
+Total Missing: 1791
+
+2026-01-02 17:45:48,397 - INFO - [3/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:45:49,465 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:45:49,730 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:49,731 - INFO - [4/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:45:50,469 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:45:51,530 - INFO - Saved raw dataset: pobmun2009.xls (149071 rows, 35 columns)
+2026-01-02 17:45:51,530 - INFO - 
+Dataset Shape: (149071, 35)
+2026-01-02 17:45:51,546 - INFO - 
+Total Missing: 5200942
+
+2026-01-02 17:45:51,546 - INFO - [5/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:45:52,560 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:45:52,660 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:52,660 - INFO - [6/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:45:54,386 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:45:54,507 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:54,508 - INFO - [7/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:45:55,642 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:45:55,765 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:55,765 - INFO - [8/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:45:57,016 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:45:57,097 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:57,098 - INFO - [9/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:45:57,788 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:45:57,864 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:57,865 - INFO - [10/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:45:58,938 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:45:59,004 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:45:59,005 - INFO - [11/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:46:00,006 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:46:00,073 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:00,073 - INFO - [12/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:46:01,055 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:46:01,103 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:01,103 - INFO - [13/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:46:01,779 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:46:01,837 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:01,837 - INFO - [14/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:46:02,842 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:46:02,991 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:02,992 - INFO - [15/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:46:03,825 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:46:03,890 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:03,890 - INFO - [16/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:46:04,783 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:46:04,844 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:04,844 - INFO - [17/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:46:05,715 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:46:05,781 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:05,782 - INFO - [18/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:46:06,550 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:46:06,629 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:06,629 - INFO - [19/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:46:07,562 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:46:07,606 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:07,607 - INFO - Finished at: 2026-01-02 17:46:07
+
+2026-01-02 17:46:18,760 - INFO - Started at: 2026-01-02 17:46:18
+
+2026-01-02 17:46:18,761 - INFO - [1/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:46:19,946 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:46:22,616 - INFO - Saved raw dataset: death_causes_province.csv (87750 rows, 1 columns)
+2026-01-02 17:46:22,616 - INFO - 
+Dataset Shape: (87750, 1)
+2026-01-02 17:46:22,618 - INFO - 
+Total Missing: 0
+
+2026-01-02 17:46:22,618 - INFO - [2/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:46:23,180 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:46:23,222 - INFO - Saved raw dataset: economic_sector_province.csv (17529 rows, 1 columns)
+2026-01-02 17:46:23,223 - INFO - 
+Dataset Shape: (17529, 1)
+2026-01-02 17:46:23,224 - INFO - 
+Total Missing: 1791
+
+2026-01-02 17:46:23,224 - INFO - [3/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:46:24,623 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:46:24,821 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:24,822 - INFO - [4/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:46:25,897 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:46:26,954 - INFO - Saved raw dataset: pobmun2009.xls (149071 rows, 35 columns)
+2026-01-02 17:46:26,954 - INFO - 
+Dataset Shape: (149071, 35)
+2026-01-02 17:46:26,966 - INFO - 
+Total Missing: 5200942
+
+2026-01-02 17:46:26,967 - INFO - [5/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:46:28,298 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:46:28,381 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:28,381 - INFO - [6/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:46:29,331 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:46:29,437 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:29,437 - INFO - [7/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:46:30,223 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:46:30,323 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:30,323 - INFO - [8/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:46:31,139 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:46:31,229 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:31,229 - INFO - [9/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:46:32,210 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:46:32,270 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:32,270 - INFO - [10/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:46:33,098 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:46:33,134 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:33,134 - INFO - [11/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:46:33,771 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:46:33,819 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:33,819 - INFO - [12/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:46:34,487 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:46:34,563 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:34,563 - INFO - [13/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:46:35,295 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:46:35,344 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:35,344 - INFO - [14/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:46:36,141 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:46:36,259 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:36,259 - INFO - [15/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:46:36,827 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:46:36,870 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:36,870 - INFO - [16/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:46:37,657 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:46:37,702 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:37,702 - INFO - [17/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:46:38,465 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:46:38,504 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:38,504 - INFO - [18/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:46:39,229 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:46:39,274 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:39,274 - INFO - [19/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:46:39,964 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:46:40,010 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:46:40,010 - INFO - Finished at: 2026-01-02 17:46:40
+
+2026-01-02 17:47:19,967 - INFO - Started at: 2026-01-02 17:47:19
+
+2026-01-02 17:47:19,968 - INFO - [1/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:47:20,750 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:47:20,784 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv: Error tokenizing data. C error: Expected 1 fields in line 362, saw 2
+
+2026-01-02 17:47:20,787 - INFO - [2/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:47:21,532 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:47:21,542 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv: Error tokenizing data. C error: Expected 2 fields in line 2842, saw 3
+
+2026-01-02 17:47:21,543 - INFO - [3/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:47:22,412 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:47:22,660 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:47:22,660 - INFO - [4/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:47:23,484 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:47:24,632 - INFO - Saved raw dataset: pobmun2009.xls (149071 rows, 35 columns)
+2026-01-02 17:47:24,632 - INFO - 
+Dataset Shape: (149071, 35)
+2026-01-02 17:47:24,644 - INFO - 
+Total Missing: 5200942
+
+2026-01-02 17:47:24,644 - INFO - [5/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:47:25,633 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:47:25,729 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:47:25,730 - INFO - [6/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:47:26,325 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:47:26,421 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:47:26,421 - INFO - [7/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:47:27,164 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:47:27,287 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:47:27,287 - INFO - [8/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:47:28,115 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:47:28,211 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:47:28,212 - INFO - [9/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:47:28,969 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:47:29,041 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:47:29,041 - INFO - [10/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:47:29,800 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:47:29,861 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx: Error tokenizing data. C error: Expected 3 fields in line 15, saw 4
+
+2026-01-02 17:47:29,861 - INFO - [11/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:47:30,586 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:47:30,633 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:47:30,633 - INFO - [12/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:47:31,420 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:47:31,480 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:47:31,480 - INFO - [13/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:47:32,189 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:47:32,228 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx: Error tokenizing data. C error: Expected 2 fields in line 7, saw 3
+
+2026-01-02 17:47:32,228 - INFO - [14/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:47:33,022 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:47:33,078 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:47:33,078 - INFO - [15/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:47:34,122 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:47:34,178 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx: Error tokenizing data. C error: Expected 3 fields in line 157, saw 4
+
+2026-01-02 17:47:34,178 - INFO - [16/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:47:34,956 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:47:35,020 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:47:35,020 - INFO - [17/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:47:35,833 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:47:35,885 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:47:35,886 - INFO - [18/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:47:36,920 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:47:36,971 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx: Error tokenizing data. C error: Expected 1 fields in line 6, saw 3
+
+2026-01-02 17:47:36,971 - INFO - [19/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:47:37,790 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:47:37,833 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:47:37,833 - INFO - Finished at: 2026-01-02 17:47:37
+
+2026-01-02 17:47:52,766 - INFO - Started at: 2026-01-02 17:47:52
+
+2026-01-02 17:47:52,766 - INFO - [1/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:47:53,366 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:47:53,388 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv: Error tokenizing data. C error: Expected 1 fields in line 362, saw 2
+
+2026-01-02 17:47:53,389 - INFO - [2/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:47:54,084 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:47:54,093 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv: Error tokenizing data. C error: Expected 2 fields in line 2842, saw 3
+
+2026-01-02 17:47:54,094 - INFO - [3/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:47:54,962 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:47:55,160 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:47:55,160 - INFO - [4/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:47:55,830 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.xls
+2026-01-02 17:47:56,947 - INFO - Saved raw dataset: pobmun2009.xls (149071 rows, 35 columns)
+2026-01-02 17:47:56,947 - INFO - 
+Dataset Shape: (149071, 35)
+2026-01-02 17:47:56,960 - INFO - 
+Total Missing: 5200942
+
+2026-01-02 17:47:56,960 - INFO - [5/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:47:58,102 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls
+2026-01-02 17:47:58,197 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:47:58,197 - INFO - [6/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:47:58,883 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls
+2026-01-02 17:47:58,999 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:47:58,999 - INFO - [7/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:48:00,018 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls
+2026-01-02 17:48:00,132 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:48:00,133 - INFO - [8/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:48:01,094 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls
+2026-01-02 17:48:01,159 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.xls: Error tokenizing data. C error: Buffer overflow caught - possible malformed input file.
+
+2026-01-02 17:48:01,160 - INFO - [9/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:48:01,924 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx
+2026-01-02 17:48:01,974 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:48:01,975 - INFO - [10/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:48:02,747 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx
+2026-01-02 17:48:02,793 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.xlsx: Error tokenizing data. C error: Expected 3 fields in line 15, saw 4
+
+2026-01-02 17:48:02,793 - INFO - [11/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:48:03,540 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx
+2026-01-02 17:48:03,578 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:48:03,578 - INFO - [12/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:48:04,446 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx
+2026-01-02 17:48:04,488 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:48:04,488 - INFO - [13/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:48:05,616 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx
+2026-01-02 17:48:05,657 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.xlsx: Error tokenizing data. C error: Expected 2 fields in line 7, saw 3
+
+2026-01-02 17:48:05,657 - INFO - [14/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:48:06,399 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx
+2026-01-02 17:48:06,433 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:48:06,433 - INFO - [15/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:48:07,247 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx
+2026-01-02 17:48:07,292 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.xlsx: Error tokenizing data. C error: Expected 3 fields in line 157, saw 4
+
+2026-01-02 17:48:07,292 - INFO - [16/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:48:08,113 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx
+2026-01-02 17:48:08,162 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:48:08,163 - INFO - [17/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:48:09,005 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx
+2026-01-02 17:48:09,068 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:48:09,069 - INFO - [18/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:48:09,909 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx
+2026-01-02 17:48:09,957 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.xlsx: Error tokenizing data. C error: Expected 1 fields in line 6, saw 3
+
+2026-01-02 17:48:09,957 - INFO - [19/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:48:10,777 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx
+2026-01-02 17:48:10,815 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.xlsx: Error tokenizing data. C error: Expected 1 fields in line 4, saw 2
+
+2026-01-02 17:48:10,815 - INFO - Finished at: 2026-01-02 17:48:10
+
+2026-01-02 17:48:39,754 - INFO - Started at: 2026-01-02 17:48:39
+
+2026-01-02 17:48:39,754 - INFO - [1/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:48:40,515 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-02 17:48:40,545 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv: Error tokenizing data. C error: Expected 1 fields in line 362, saw 2
+
+2026-01-02 17:48:40,547 - INFO - [2/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:48:41,221 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-02 17:48:41,226 - ERROR - Failed to parse CSV from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv: Error tokenizing data. C error: Expected 2 fields in line 2842, saw 3
+
+2026-01-02 17:48:41,227 - INFO - [3/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
+2026-01-02 17:48:42,023 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.xls
