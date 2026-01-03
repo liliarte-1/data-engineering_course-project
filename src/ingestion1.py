@@ -54,7 +54,7 @@ for idx, url in enumerate(urls):
         # df = pd.read_csv(io.StringIO(response.text),sep=',',on_bad_lines='skip')
 
         # so we do this instead
-        df = pd.read_csv(io.StringIO(response.text), low_memory=False)
+        df = pd.read_csv(io.StringIO(response.text), sep=";", on_bad_lines="warn")
 
         # extract file name from URL
         file_name = os.path.basename(urlparse(url).path)
@@ -69,9 +69,9 @@ for idx, url in enumerate(urls):
         )
 
          # INITIAL DATA EXPLORATION
-        logging.info(f"\nDataset Shape: {df.shape}")
-        logging.debug(f"\nColumn Names & Types:\n{df.dtypes}")
-        logging.info(f"\nTotal Missing: {df.isnull().sum().sum()}\n")
+        logging.info(f"Dataset Shape: {df.shape}")
+        logging.debug(f"Column Names & Types:\n{df.dtypes}")
+        logging.info(f"Total Missing: {df.isnull().sum().sum()}")
 
     # handle network errors and parsing errors
     except requests.RequestException as exc:
