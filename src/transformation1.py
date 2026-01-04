@@ -68,7 +68,13 @@ for f in archivos:
     # string cols
     #5 
     df["CPRO_NAME"] = df["CPRO_NAME"].str.replace(",", "", regex=False)
+    df["CPRO_NAME"] = df["CPRO_NAME"].str.replace("(", "", regex=False)
+    df["CPRO_NAME"] = df["CPRO_NAME"].str.replace(")", "", regex=False)
+    
     df["MUN_NAME"]  = df["MUN_NAME"].str.replace(",", "", regex=False)
+    df["MUN_NAME"] = df["MUN_NAME"].str.replace("(", "", regex=False)
+    df["MUN_NAME"] = df["MUN_NAME"].str.replace(")", "", regex=False)
+
     df["CPRO_NAME"] = df["CPRO_NAME"].astype("string")
     df["MUN_NAME"]  = df["MUN_NAME"].astype("string")
 
@@ -126,10 +132,16 @@ logging.info(df_total.isnull().sum())
 
 
 #9
-codauto = pd.read_csv("data/staging/codauto_cpro.csv", sep=None, engine="python", encoding="cp1252")
+codauto = pd.read_csv("data/staging/codauto_cpro.csv", sep=";")
 logging.info(f"Loaded codauto reference with shape {codauto.shape}; unique CPRO: {codauto['CPRO'].nunique(dropna=True)}")
 codauto["CPRO_NAME"] = codauto["CPRO_NAME"].str.replace(",", "", regex=False)
+codauto["CPRO_NAME"] = codauto["CPRO_NAME"].str.replace("(", "", regex=False)
+codauto["CPRO_NAME"] = codauto["CPRO_NAME"].str.replace(")", "", regex=False)
 codauto["CODAUTO_NAME"] = codauto["CODAUTO_NAME"].str.replace(",", "", regex=False)
+codauto["CODAUTO_NAME"] = codauto["CODAUTO_NAME"].str.replace("(", "", regex=False)
+codauto["CODAUTO_NAME"] = codauto["CODAUTO_NAME"].str.replace(")", "", regex=False)
+
+
 codauto["CPRO_NAME"] = codauto["CPRO_NAME"].astype("string")
 codauto["CODAUTO_NAME"]  = codauto["CODAUTO_NAME"].astype("string")
 codauto["CPRO"] = codauto["CPRO"].astype("Int64")
@@ -173,6 +185,7 @@ economic_df = (
         .groupby(["CPRO", "CPRO_NAME", "Sector económico", "YEAR"], as_index=False)["Total"]
         .mean()
 )
+#14
 # rename and reorder columns
 economic_df.columns = [
         "CPRO", "CPRO_NAME", "ECONOMIC_SECTOR", "YEAR",
@@ -184,9 +197,17 @@ logging.info(f"Economic dataset aggregated to shape {economic_df.shape} and colu
 logging.info(f"Transformation completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 
+deathcauses_df = pd.read_csv(
+    "data/raw/death_causes_province.csv",
+    sep=";",
+)
 
+#15
+deathcauses_df["Total"] = deathcauses_df["Total"].str.replace(".", "", regex=False)
+deathcauses_df["Total"] = pd.to_numeric(deathcauses_df["Total"], errors="coerce")
 
-
+deathcauses_df["Provincias"] = deathcauses_df["Provincias"].astype("string").str.strip()
+deathcauses_df = deathcauses_df[~deathcauses_df["Provincias"].str.lower().eq("Nacional")].copy()
 
             
 

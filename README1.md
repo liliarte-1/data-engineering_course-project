@@ -45,7 +45,7 @@ Also, the correct format is given to prevent future issues
 
 4. Some of the Pobmun datasets have missing values. Checking the fields that are missing, the best practice is different between the columns. There are more than 130000 rows, and there are missing only a few values, which is super good to do the best study possible with real values.
 
-5. Also, a consistent format is wanted, so the different characters like "," will be supressed
+5. Also, a consistent format is wanted, so the different characters like "," or "()" will be supressed
 
 It is possible to see that the values that are missing are the same in number, so most likely the row that is missing one is missing most of them.
 
@@ -63,7 +63,7 @@ After that steps, pobmun_total.csv is ready to be warehoused and studied.
 For the other csvs, the transformation is easier. 
 
 codauto_cpro.csv:
-9. Just make sure there is no signs like "," and match the format.
+9. Just make sure there is no signs like "," or "()" and match the format.
 
 
 economic_sector_province.csv:
@@ -76,11 +76,17 @@ economic_sector_province.csv:
 KEY STEP
 13. For this project the data is going to be studied per year, not per Trimestral, so to solve that issue, first the year and the period need to be in different cols. Since there is percentage value, the media should be imputed for each year and the trimestral data would no longer be necessary. 
 
-14. For convinience change the column names and reorder
+14. For convenience change the column names and reorder
 
 
 death_causes_province.csv:
+15. Reformat Total column to avoid future problems
 
+16. Also, Total Nacional values in Provincia column are not needed since easily all the provinces can be added.
+
+17. Fill the null values that are only on the Total column.
+
+18. Change column names and reorder
 
 Now the transformed csvs are saved in the staging folder
 
