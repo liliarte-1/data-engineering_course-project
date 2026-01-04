@@ -9649,3 +9649,164 @@ dtype: int64
 2026-01-04 18:10:44,139 - INFO - Saving transformed datasets to data/staging/
 2026-01-04 18:10:44,454 - INFO - Transformation process completed at: 2026-01-04 18:10:44
 
+2026-01-04 18:16:44,691 - INFO - Started at: 2026-01-04 18:16:44
+
+2026-01-04 18:16:44,692 - INFO - Found 17 source files in data\raw
+2026-01-04 18:16:44,704 - INFO - Read file pobmun2008.csv with shape (8112, 7)
+2026-01-04 18:16:44,705 - INFO - Detected year 2008 from filename pobmun2008.csv
+2026-01-04 18:16:44,740 - INFO - Missing counts in int cols after cleaning for pobmun2008.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:44,746 - INFO - After cleaning, pobmun2008.csv has 8111 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:44,746 - INFO - Appended 8111 rows from pobmun2008.csv; combined dataset now (8111, 8)
+2026-01-04 18:16:44,757 - INFO - Read file pobmun2009.csv with shape (8164, 7)
+2026-01-04 18:16:44,757 - INFO - Detected year 2009 from filename pobmun2009.csv
+2026-01-04 18:16:44,795 - INFO - Missing counts in int cols after cleaning for pobmun2009.csv: {'CPRO': 52, 'MUN_NUMBER': 52, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:44,800 - INFO - After cleaning, pobmun2009.csv has 8163 rows; unique CPRO_NAMEs: 103
+2026-01-04 18:16:44,800 - INFO - Appended 8163 rows from pobmun2009.csv; combined dataset now (16274, 8)
+2026-01-04 18:16:44,811 - INFO - Read file pobmun2010.csv with shape (8114, 7)
+2026-01-04 18:16:44,811 - INFO - Detected year 2010 from filename pobmun2010.csv
+2026-01-04 18:16:44,848 - INFO - Missing counts in int cols after cleaning for pobmun2010.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:44,853 - INFO - After cleaning, pobmun2010.csv has 8113 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:44,855 - INFO - Appended 8113 rows from pobmun2010.csv; combined dataset now (24387, 8)
+2026-01-04 18:16:44,864 - INFO - Read file pobmun2011.csv with shape (8116, 7)
+2026-01-04 18:16:44,865 - INFO - Detected year 2011 from filename pobmun2011.csv
+2026-01-04 18:16:44,900 - INFO - Missing counts in int cols after cleaning for pobmun2011.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:44,905 - INFO - After cleaning, pobmun2011.csv has 8115 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:44,906 - INFO - Appended 8115 rows from pobmun2011.csv; combined dataset now (32502, 8)
+2026-01-04 18:16:44,919 - INFO - Read file pobmun2012.csv with shape (8116, 7)
+2026-01-04 18:16:44,919 - INFO - Detected year 2012 from filename pobmun2012.csv
+2026-01-04 18:16:44,954 - INFO - Missing counts in int cols after cleaning for pobmun2012.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:44,959 - INFO - After cleaning, pobmun2012.csv has 8115 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:44,961 - INFO - Appended 8115 rows from pobmun2012.csv; combined dataset now (40617, 8)
+2026-01-04 18:16:44,971 - INFO - Read file pobmun2013.csv with shape (8117, 7)
+2026-01-04 18:16:44,971 - INFO - Detected year 2013 from filename pobmun2013.csv
+2026-01-04 18:16:45,006 - INFO - Missing counts in int cols after cleaning for pobmun2013.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,012 - INFO - After cleaning, pobmun2013.csv has 8116 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,017 - INFO - Appended 8116 rows from pobmun2013.csv; combined dataset now (48733, 8)
+2026-01-04 18:16:45,028 - INFO - Read file pobmun2014.csv with shape (8117, 7)
+2026-01-04 18:16:45,028 - INFO - Detected year 2014 from filename pobmun2014.csv
+2026-01-04 18:16:45,064 - INFO - Missing counts in int cols after cleaning for pobmun2014.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,069 - INFO - After cleaning, pobmun2014.csv has 8116 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,071 - INFO - Appended 8116 rows from pobmun2014.csv; combined dataset now (56849, 8)
+2026-01-04 18:16:45,082 - INFO - Read file pobmun2015.csv with shape (8119, 7)
+2026-01-04 18:16:45,083 - INFO - Detected year 2015 from filename pobmun2015.csv
+2026-01-04 18:16:45,129 - INFO - Missing counts in int cols after cleaning for pobmun2015.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,135 - INFO - After cleaning, pobmun2015.csv has 8118 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,138 - INFO - Appended 8118 rows from pobmun2015.csv; combined dataset now (64967, 8)
+2026-01-04 18:16:45,148 - INFO - Read file pobmun2016.csv with shape (8126, 7)
+2026-01-04 18:16:45,149 - INFO - Detected year 2016 from filename pobmun2016.csv
+2026-01-04 18:16:45,200 - INFO - Missing counts in int cols after cleaning for pobmun2016.csv: {'CPRO': 1, 'MUN_NUMBER': 1, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,205 - INFO - After cleaning, pobmun2016.csv has 8125 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,210 - INFO - Appended 8125 rows from pobmun2016.csv; combined dataset now (73092, 8)
+2026-01-04 18:16:45,221 - INFO - Read file pobmun2017.csv with shape (8124, 7)
+2026-01-04 18:16:45,221 - INFO - Detected year 2017 from filename pobmun2017.csv
+2026-01-04 18:16:45,269 - INFO - Missing counts in int cols after cleaning for pobmun2017.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,275 - INFO - After cleaning, pobmun2017.csv has 8123 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,279 - INFO - Appended 8123 rows from pobmun2017.csv; combined dataset now (81215, 8)
+2026-01-04 18:16:45,288 - INFO - Read file pobmun2018.csv with shape (8124, 7)
+2026-01-04 18:16:45,288 - INFO - Detected year 2018 from filename pobmun2018.csv
+2026-01-04 18:16:45,327 - INFO - Missing counts in int cols after cleaning for pobmun2018.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,332 - INFO - After cleaning, pobmun2018.csv has 8123 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,335 - INFO - Appended 8123 rows from pobmun2018.csv; combined dataset now (89338, 8)
+2026-01-04 18:16:45,344 - INFO - Read file pobmun2019.csv with shape (8131, 7)
+2026-01-04 18:16:45,345 - INFO - Detected year 2019 from filename pobmun2019.csv
+2026-01-04 18:16:45,382 - INFO - Missing counts in int cols after cleaning for pobmun2019.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,387 - INFO - After cleaning, pobmun2019.csv has 8130 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,390 - INFO - Appended 8130 rows from pobmun2019.csv; combined dataset now (97468, 8)
+2026-01-04 18:16:45,399 - INFO - Read file pobmun2020.csv with shape (8131, 7)
+2026-01-04 18:16:45,400 - INFO - Detected year 2020 from filename pobmun2020.csv
+2026-01-04 18:16:45,445 - INFO - Missing counts in int cols after cleaning for pobmun2020.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,452 - INFO - After cleaning, pobmun2020.csv has 8130 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,458 - INFO - Appended 8130 rows from pobmun2020.csv; combined dataset now (105598, 8)
+2026-01-04 18:16:45,467 - INFO - Read file pobmun2021.csv with shape (8131, 7)
+2026-01-04 18:16:45,468 - INFO - Detected year 2021 from filename pobmun2021.csv
+2026-01-04 18:16:45,519 - INFO - Missing counts in int cols after cleaning for pobmun2021.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,525 - INFO - After cleaning, pobmun2021.csv has 8130 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,531 - INFO - Appended 8130 rows from pobmun2021.csv; combined dataset now (113728, 8)
+2026-01-04 18:16:45,541 - INFO - Read file pobmun2022.csv with shape (8131, 7)
+2026-01-04 18:16:45,541 - INFO - Detected year 2022 from filename pobmun2022.csv
+2026-01-04 18:16:45,586 - INFO - Missing counts in int cols after cleaning for pobmun2022.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,591 - INFO - After cleaning, pobmun2022.csv has 8130 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,596 - INFO - Appended 8130 rows from pobmun2022.csv; combined dataset now (121858, 8)
+2026-01-04 18:16:45,603 - INFO - Read file pobmun2023.csv with shape (8131, 7)
+2026-01-04 18:16:45,603 - INFO - Detected year 2023 from filename pobmun2023.csv
+2026-01-04 18:16:45,642 - INFO - Missing counts in int cols after cleaning for pobmun2023.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,648 - INFO - After cleaning, pobmun2023.csv has 8130 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,652 - INFO - Appended 8130 rows from pobmun2023.csv; combined dataset now (129988, 8)
+2026-01-04 18:16:45,661 - INFO - Read file pobmun2024.csv with shape (8132, 7)
+2026-01-04 18:16:45,661 - INFO - Detected year 2024 from filename pobmun2024.csv
+2026-01-04 18:16:45,699 - INFO - Missing counts in int cols after cleaning for pobmun2024.csv: {'CPRO': 0, 'MUN_NUMBER': 0, 'POBLATION': 0, 'MALE': 0, 'FEMALE': 0, 'YEAR': 0}
+2026-01-04 18:16:45,704 - INFO - After cleaning, pobmun2024.csv has 8131 rows; unique CPRO_NAMEs: 52
+2026-01-04 18:16:45,713 - INFO - Appended 8131 rows from pobmun2024.csv; combined dataset now (138119, 8)
+2026-01-04 18:16:45,714 - INFO - Total combined dataset shape: (138119, 8)
+2026-01-04 18:16:45,714 - INFO - Missing values by column:
+2026-01-04 18:16:45,719 - INFO - CPRO          52
+CPRO_NAME      1
+MUN_NUMBER    52
+MUN_NAME      52
+POBLATION      0
+MALE           0
+FEMALE         0
+YEAR           0
+dtype: int64
+2026-01-04 18:16:45,720 - INFO - Missing before drop - MALE: 0, FEMALE: 0
+2026-01-04 18:16:45,726 - INFO - Dropped rows with missing MALE/FEMALE. New shape: (138119, 8)
+2026-01-04 18:16:45,729 - INFO - Missing before drop - MUN_NAME: 52, MUN_NUMBER: 52
+2026-01-04 18:16:45,739 - INFO - Dropped rows with missing MUN_NAME/MUN_NUMBER. New shape: (138067, 8)
+2026-01-04 18:16:45,742 - INFO - Missing before final drop - CPRO: 0, CPRO_NAME: 0
+2026-01-04 18:16:45,749 - INFO - Total combined dataset shape: (138067, 8)
+2026-01-04 18:16:45,749 - INFO - Missing values by column:
+2026-01-04 18:16:45,755 - INFO - CPRO          0
+CPRO_NAME     0
+MUN_NUMBER    0
+MUN_NAME      0
+POBLATION     0
+MALE          0
+FEMALE        0
+YEAR          0
+dtype: int64
+2026-01-04 18:16:45,757 - INFO - Loaded codauto reference with shape (52, 4); unique CPRO: 52
+2026-01-04 18:16:45,770 - INFO - Loaded economic sector file with shape (18815, 4)
+2026-01-04 18:16:45,775 - INFO - Filtered economic sector rows, new shape (18460, 4)
+2026-01-04 18:16:45,818 - INFO - Economic dataset aggregated to shape (4680, 5) and columns ['CPRO', 'CPRO_NAME', 'ECONOMIC_SECTOR', 'YEAR', 'TOTAL']
+2026-01-04 18:16:45,818 - INFO - Transformation completed at: 2026-01-04 18:16:45
+2026-01-04 18:16:46,270 - INFO - FINAL REPORT AFTER TRANSFORMATION
+2026-01-04 18:16:46,270 - INFO - Combined main dataset shape after transformation: (138067, 8)
+2026-01-04 18:16:46,276 - INFO - CPRO          0
+CPRO_NAME     0
+MUN_NUMBER    0
+MUN_NAME      0
+POBLATION     0
+MALE          0
+FEMALE        0
+YEAR          0
+dtype: int64
+2026-01-04 18:16:46,276 - INFO - Index(['CPRO', 'CPRO_NAME', 'MUN_NUMBER', 'MUN_NAME', 'POBLATION', 'MALE',
+       'FEMALE', 'YEAR'],
+      dtype='object')
+2026-01-04 18:16:46,277 - INFO - Economic dataset shape after transformation: (4680, 5)
+2026-01-04 18:16:46,277 - INFO - CPRO               0
+CPRO_NAME          0
+ECONOMIC_SECTOR    0
+YEAR               0
+TOTAL              0
+dtype: int64
+2026-01-04 18:16:46,278 - INFO - Index(['CPRO', 'CPRO_NAME', 'ECONOMIC_SECTOR', 'YEAR', 'TOTAL'], dtype='object')
+2026-01-04 18:16:46,278 - INFO - Death Causes dataset shape after transformation: (126360, 6)
+2026-01-04 18:16:46,286 - INFO - DEATH_CAUSE    0
+SEX            0
+YEAR           0
+TOTAL          0
+CPRO           0
+CPRO_NAME      0
+dtype: int64
+2026-01-04 18:16:46,287 - INFO - Index(['DEATH_CAUSE', 'SEX', 'YEAR', 'TOTAL', 'CPRO', 'CPRO_NAME'], dtype='object')
+2026-01-04 18:16:46,287 - INFO - Codauto reference dataset shape after transformation: (52, 4)
+2026-01-04 18:16:46,287 - INFO - CODAUTO         0
+CODAUTO_NAME    0
+CPRO            0
+CPRO_NAME       0
+dtype: int64
+2026-01-04 18:16:46,288 - INFO - Index(['CODAUTO', 'CODAUTO_NAME', 'CPRO', 'CPRO_NAME'], dtype='object')
+2026-01-04 18:16:46,476 - INFO - Saving transformed datasets to data/staging/
+2026-01-04 18:16:46,872 - INFO - Transformation process completed at: 2026-01-04 18:16:46
+

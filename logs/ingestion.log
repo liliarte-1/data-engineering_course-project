@@ -2291,3 +2291,102 @@ Total Missing: 0
 2026-01-04 18:10:40,224 - INFO - Total Missing: 0
 2026-01-04 18:10:40,225 - INFO - Finished at: 2026-01-04 18:10:40
 
+2026-01-04 18:16:17,051 - INFO - Started at: 2026-01-04 18:16:17
+
+2026-01-04 18:16:17,052 - INFO - [1/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-04 18:16:17,853 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv
+2026-01-04 18:16:18,237 - INFO - Saved raw dataset: death_causes_province.csv (131220 rows, 5 columns)
+2026-01-04 18:16:18,237 - INFO - Dataset Shape: (131220, 5)
+2026-01-04 18:16:18,244 - INFO - Total Missing: 17
+2026-01-04 18:16:18,244 - INFO - [2/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-04 18:16:18,875 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv
+2026-01-04 18:16:18,928 - INFO - Saved raw dataset: economic_sector_province.csv (18815 rows, 4 columns)
+2026-01-04 18:16:18,928 - INFO - Dataset Shape: (18815, 4)
+2026-01-04 18:16:18,931 - INFO - Total Missing: 0
+2026-01-04 18:16:18,931 - INFO - [3/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.csv
+2026-01-04 18:16:20,103 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.csv
+2026-01-04 18:16:20,554 - INFO - Saved raw dataset: pobmun2008.csv (8113 rows, 7 columns)
+2026-01-04 18:16:20,554 - INFO - Dataset Shape: (8113, 7)
+2026-01-04 18:16:20,555 - INFO - Total Missing: 0
+2026-01-04 18:16:20,555 - INFO - [4/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.csv
+2026-01-04 18:16:21,279 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.csv
+2026-01-04 18:16:21,644 - INFO - Saved raw dataset: pobmun2009.csv (8165 rows, 7 columns)
+2026-01-04 18:16:21,644 - INFO - Dataset Shape: (8165, 7)
+2026-01-04 18:16:21,645 - INFO - Total Missing: 156
+2026-01-04 18:16:21,646 - INFO - [5/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.csv
+2026-01-04 18:16:22,410 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.csv
+2026-01-04 18:16:22,827 - INFO - Saved raw dataset: pobmun2010.csv (8115 rows, 7 columns)
+2026-01-04 18:16:22,827 - INFO - Dataset Shape: (8115, 7)
+2026-01-04 18:16:22,828 - INFO - Total Missing: 0
+2026-01-04 18:16:22,828 - INFO - [6/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.csv
+2026-01-04 18:16:23,727 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.csv
+2026-01-04 18:16:24,077 - INFO - Saved raw dataset: pobmun2011.csv (8117 rows, 7 columns)
+2026-01-04 18:16:24,077 - INFO - Dataset Shape: (8117, 7)
+2026-01-04 18:16:24,079 - INFO - Total Missing: 0
+2026-01-04 18:16:24,079 - INFO - [7/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.csv
+2026-01-04 18:16:24,774 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.csv
+2026-01-04 18:16:25,151 - INFO - Saved raw dataset: pobmun2012.csv (8117 rows, 7 columns)
+2026-01-04 18:16:25,151 - INFO - Dataset Shape: (8117, 7)
+2026-01-04 18:16:25,154 - INFO - Total Missing: 0
+2026-01-04 18:16:25,154 - INFO - [8/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.csv
+2026-01-04 18:16:26,124 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.csv
+2026-01-04 18:16:26,486 - INFO - Saved raw dataset: pobmun2013.csv (8118 rows, 7 columns)
+2026-01-04 18:16:26,486 - INFO - Dataset Shape: (8118, 7)
+2026-01-04 18:16:26,488 - INFO - Total Missing: 0
+2026-01-04 18:16:26,488 - INFO - [9/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.csv
+2026-01-04 18:16:27,220 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.csv
+2026-01-04 18:16:27,593 - INFO - Saved raw dataset: pobmun2014.csv (8118 rows, 7 columns)
+2026-01-04 18:16:27,593 - INFO - Dataset Shape: (8118, 7)
+2026-01-04 18:16:27,594 - INFO - Total Missing: 0
+2026-01-04 18:16:27,594 - INFO - [10/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.csv
+2026-01-04 18:16:28,388 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.csv
+2026-01-04 18:16:28,839 - INFO - Saved raw dataset: pobmun2015.csv (8120 rows, 7 columns)
+2026-01-04 18:16:28,839 - INFO - Dataset Shape: (8120, 7)
+2026-01-04 18:16:28,840 - INFO - Total Missing: 0
+2026-01-04 18:16:28,840 - INFO - [11/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.csv
+2026-01-04 18:16:29,854 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.csv
+2026-01-04 18:16:30,210 - INFO - Saved raw dataset: pobmun2016.csv (8127 rows, 7 columns)
+2026-01-04 18:16:30,210 - INFO - Dataset Shape: (8127, 7)
+2026-01-04 18:16:30,212 - INFO - Total Missing: 4
+2026-01-04 18:16:30,212 - INFO - [12/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.csv
+2026-01-04 18:16:31,154 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.csv
+2026-01-04 18:16:31,462 - INFO - Saved raw dataset: pobmun2017.csv (8125 rows, 7 columns)
+2026-01-04 18:16:31,462 - INFO - Dataset Shape: (8125, 7)
+2026-01-04 18:16:31,465 - INFO - Total Missing: 0
+2026-01-04 18:16:31,465 - INFO - [13/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.csv
+2026-01-04 18:16:32,177 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.csv
+2026-01-04 18:16:32,570 - INFO - Saved raw dataset: pobmun2018.csv (8125 rows, 7 columns)
+2026-01-04 18:16:32,570 - INFO - Dataset Shape: (8125, 7)
+2026-01-04 18:16:32,571 - INFO - Total Missing: 0
+2026-01-04 18:16:32,571 - INFO - [14/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.csv
+2026-01-04 18:16:33,501 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.csv
+2026-01-04 18:16:33,942 - INFO - Saved raw dataset: pobmun2019.csv (8132 rows, 7 columns)
+2026-01-04 18:16:33,942 - INFO - Dataset Shape: (8132, 7)
+2026-01-04 18:16:33,944 - INFO - Total Missing: 0
+2026-01-04 18:16:33,944 - INFO - [15/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.csv
+2026-01-04 18:16:34,704 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.csv
+2026-01-04 18:16:35,077 - INFO - Saved raw dataset: pobmun2020.csv (8132 rows, 7 columns)
+2026-01-04 18:16:35,077 - INFO - Dataset Shape: (8132, 7)
+2026-01-04 18:16:35,079 - INFO - Total Missing: 0
+2026-01-04 18:16:35,079 - INFO - [16/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.csv
+2026-01-04 18:16:36,068 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.csv
+2026-01-04 18:16:36,442 - INFO - Saved raw dataset: pobmun2021.csv (8132 rows, 7 columns)
+2026-01-04 18:16:36,443 - INFO - Dataset Shape: (8132, 7)
+2026-01-04 18:16:36,444 - INFO - Total Missing: 0
+2026-01-04 18:16:36,444 - INFO - [17/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.csv
+2026-01-04 18:16:37,131 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.csv
+2026-01-04 18:16:37,500 - INFO - Saved raw dataset: pobmun2022.csv (8132 rows, 7 columns)
+2026-01-04 18:16:37,500 - INFO - Dataset Shape: (8132, 7)
+2026-01-04 18:16:37,501 - INFO - Total Missing: 0
+2026-01-04 18:16:37,501 - INFO - [18/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.csv
+2026-01-04 18:16:38,209 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.csv
+2026-01-04 18:16:38,592 - INFO - Saved raw dataset: pobmun2023.csv (8132 rows, 7 columns)
+2026-01-04 18:16:38,592 - INFO - Dataset Shape: (8132, 7)
+2026-01-04 18:16:38,594 - INFO - Total Missing: 0
+2026-01-04 18:16:38,594 - INFO - [19/19] Fetching: https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.csv
+2026-01-04 18:16:39,648 - INFO - Successfully fetched data from https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.csv
+2026-01-04 18:16:40,018 - INFO - Saved raw dataset: pobmun2024.csv (8133 rows, 7 columns)
+2026-01-04 18:16:40,018 - INFO - Dataset Shape: (8133, 7)
+2026-01-04 18:16:40,020 - INFO - Total Missing: 0
+2026-01-04 18:16:40,020 - INFO - Finished at: 2026-01-04 18:16:40
+
