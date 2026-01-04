@@ -132,7 +132,7 @@ logging.info(df_total.isnull().sum())
 
 
 #9
-codauto = pd.read_csv("data/staging/codauto_cpro.csv", sep=";")
+codauto = pd.read_csv("data/raw/codauto_cpro.csv", sep=";")
 logging.info(f"Loaded codauto reference with shape {codauto.shape}; unique CPRO: {codauto['CPRO'].nunique(dropna=True)}")
 codauto["CPRO_NAME"] = codauto["CPRO_NAME"].str.replace(",", "", regex=False)
 codauto["CPRO_NAME"] = codauto["CPRO_NAME"].str.replace("(", "", regex=False)
@@ -154,23 +154,36 @@ economic_df = pd.read_csv(
 logging.info(f"Loaded economic sector file with shape {economic_df.shape}")
 
 economic_df["Provincias"] = economic_df["Provincias"].astype("string").str.strip()
-economic_df = economic_df[~economic_df["Provincias"].str.lower().eq("Total Nacional")].copy()
+economic_df = economic_df[~economic_df["Provincias"].str.lower().eq("total nacional")].copy()
 logging.info(f"Filtered economic sector rows, new shape {economic_df.shape}")
 
 #11
+# 1) Normaliza Total a numérico (quita miles y convierte)
 economic_df["Total"] = (
     economic_df["Total"]
-      .astype("string")
-      .str.strip()
-      .str.replace(",", ".", regex=False)
+    .astype(str)
+    .str.strip()
+    .str.replace(".", "", regex=False)     # miles
+    .replace({"": pd.NA, "nan": pd.NA, "None": pd.NA})
 )
+
 economic_df["Total"] = pd.to_numeric(economic_df["Total"], errors="coerce")
+
+# 2) Rellena NaN con la media de su provincia
+economic_df["Total"] = economic_df["Total"].fillna(
+    economic_df.groupby("Provincias")["Total"].transform("mean")
+)
+
+# 3) Si aún quedan NaN (provincias enteras vacías), usa media global
+economic_df["Total"] = economic_df["Total"].fillna(economic_df["Total"].mean())
+
+# 4) Entero final (redondea antes)
+economic_df["Total"] = economic_df["Total"].round().astype("Int64")
 
 #12
 ext = economic_df["Provincias"].str.extract(r"^\s*(\d{1,2})\s*[-–:]*\s*(.+?)\s*$")
 economic_df["CPRO"] = ext[0].astype("string").str.zfill(2)
 economic_df["CPRO_NAME"] = ext[1].astype("string").str.strip()
-economic_df = economic_df[~economic_df["Provincias"].str.contains(r"^total\s+nacional$", case=False, na=False)].copy()
 
 # 13
 # extract year and quarter from "Periodo" column
@@ -199,17 +212,96 @@ logging.info(f"Transformation completed at: {datetime.now().strftime('%Y-%m-%d %
 
 deathcauses_df = pd.read_csv(
     "data/raw/death_causes_province.csv",
-    sep=";",
+    sep=",",
 )
 
 #15
-deathcauses_df["Total"] = deathcauses_df["Total"].str.replace(".", "", regex=False)
-deathcauses_df["Total"] = pd.to_numeric(deathcauses_df["Total"], errors="coerce")
+deathcauses_df["Total"] = (
+    deathcauses_df["Total"]
+        .astype(str)
+        .str.replace(".", "", regex=False)
+        .replace("nan", pd.NA)
+        .astype("Int64")
+)
 
+#16
 deathcauses_df["Provincias"] = deathcauses_df["Provincias"].astype("string").str.strip()
-deathcauses_df = deathcauses_df[~deathcauses_df["Provincias"].str.lower().eq("Nacional")].copy()
+deathcauses_df = deathcauses_df[~deathcauses_df["Provincias"].str.lower().eq("nacional")].copy()
+deathcauses_df = deathcauses_df[~deathcauses_df["Provincias"].str.lower().eq("extranjero")].copy()
+deathcauses_df.reset_index(drop=True, inplace=True)
 
-            
+#17 
+deathcauses_df["Total"] = (
+    deathcauses_df["Total"]
+    .astype(str)
+    .str.strip()
+    .str.replace(".", "", regex=False)     # miles
+    .replace({"": pd.NA, "nan": pd.NA, "None": pd.NA})
+)
+
+deathcauses_df["Total"] = pd.to_numeric(deathcauses_df["Total"], errors="coerce")
+deathcauses_df["Total"] = deathcauses_df["Total"].fillna(
+    deathcauses_df.groupby(["Provincias", "Causa de muerte"])["Total"].transform("mean")
+)
+
+deathcauses_df["Total"] = deathcauses_df["Total"].fillna(deathcauses_df["Total"].mean())
+deathcauses_df["Total"] = deathcauses_df["Total"].round().astype("Int64")
 
 
+#18
+ext = deathcauses_df["Provincias"].str.extract(r"^\s*(\d{1,2})\s*[-–:]*\s*(.+?)\s*$")
+deathcauses_df["CPRO"] = ext[0].astype("string").str.zfill(2)
+deathcauses_df["CPRO_NAME"] = ext[1].astype("string").str.strip()
+deathcauses_df.drop(columns=["Provincias"], inplace=True)
 
+# check extraction failures (DEBUG)
+# mask_fail = ext[0].isna() | ext[1].isna()
+# logging.info(deathcauses_df.loc[mask_fail, "Provincias"].value_counts(dropna=False).head(50))
+
+#19
+deathcauses_df.columns = [
+        "DEATH_CAUSE", "SEX", "YEAR", "TOTAL",
+        "CPRO", "CPRO_NAME"
+    ]
+
+logging.info("FINAL REPORT AFTER TRANSFORMATION")
+
+logging.info(f"Combined main dataset shape after transformation: {df_total.shape}")
+logging.info(df_total.isnull().sum())    
+logging.info(df_total.columns)
+
+logging.info(f"Economic dataset shape after transformation: {economic_df.shape}")
+logging.info(economic_df.isnull().sum())
+logging.info(economic_df.columns)
+
+logging.info(f"Death Causes dataset shape after transformation: {deathcauses_df.shape}")
+logging.info(deathcauses_df.isnull().sum())    
+logging.info(deathcauses_df.columns)
+
+logging.info(f"Codauto reference dataset shape after transformation: {codauto.shape}")
+logging.info(codauto.isnull().sum())
+logging.info(codauto.columns)
+
+#20
+df_total["CPRO"] = df_total["CPRO"].astype("string").str.zfill(2)
+economic_df["CPRO"] = economic_df["CPRO"].astype("string").str.zfill(2)
+deathcauses_df["CPRO"] = deathcauses_df["CPRO"].astype("string").str.zfill(2)
+codauto["CPRO"] = codauto["CPRO"].astype("string").str.zfill(2)
+
+df_total["CPRO"] = (
+    df_total["CPRO"]
+    .astype(int)
+    // 10
+)
+economic_df["CPRO"] = economic_df["CPRO"].astype("Int64")
+deathcauses_df["CPRO"] = deathcauses_df["CPRO"].astype("Int64")
+codauto["CPRO"] = codauto["CPRO"].astype("Int64")
+
+
+logging.info("Saving transformed datasets to data/staging/")
+df_total.to_csv("data/staging/pobmun_combined_transformed.csv", index=False)
+economic_df.to_csv("data/staging/economic_sector_province_transformed.csv", index=False)
+deathcauses_df.to_csv("data/staging/death_causes_province_transformed.csv", index=False)
+codauto.to_csv("data/staging/codauto_cpro_transformed.csv", index=False)
+
+logging.info(f"Transformation process completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
