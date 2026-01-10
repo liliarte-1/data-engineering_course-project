@@ -1,96 +1,117 @@
-/* =========================
-   0) Schema lógico
-========================= */
-CREATE SCHEMA dw;
+-- Asegura el schema
+IF SCHEMA_ID('dw') IS NULL
+    EXEC ('CREATE SCHEMA dw');
 GO
 
 /* =========================
-   1) DIMENSIONES
-========================= */
+   DIMENSIONES
+   ========================= */
 
-/* Tiempo (en tu caso: solo año) */
+CREATE TABLE dw.dim_autonomy (
+    CODAUTO       INT           NOT NULL,
+    CODAUTO_NAME  NVARCHAR(200)  NOT NULL,
+    CONSTRAINT PK_dim_autonomy PRIMARY KEY (CODAUTO)
+);
+GO
+
+CREATE TABLE dw.dim_province (
+    CPRO      INT           NOT NULL,
+    CODAUTO   INT           NOT NULL,
+    CPRO_NAME NVARCHAR(200) NOT NULL,
+    CONSTRAINT PK_dim_province PRIMARY KEY (CPRO),
+    CONSTRAINT FK_dim_province_autonomy
+        FOREIGN KEY (CODAUTO) REFERENCES dw.dim_autonomy (CODAUTO)
+);
+GO
+
 CREATE TABLE dw.dim_time (
-    [year] INT NOT NULL,
-    CONSTRAINT PK_dim_time PRIMARY KEY ([year])
+    [YEAR] INT NOT NULL,
+    CONSTRAINT PK_dim_time PRIMARY KEY ([YEAR])
 );
 GO
 
-/* Indicador (qué mide el value) */
-CREATE TABLE dw.dim_indicator (
-    indicator_code  VARCHAR(80)  NOT NULL,   -- ej: 'population', 'households'
-    indicator_name  VARCHAR(200) NOT NULL,   -- ej: 'Population'
-    unit            VARCHAR(50)  NULL,       -- ej: 'persons', 'households'
-    topic           VARCHAR(120) NULL,       -- ej: 'demography'
-    CONSTRAINT PK_dim_indicator PRIMARY KEY (indicator_code)
+CREATE TABLE dw.dim_sex (
+    SEX NVARCHAR(50) NOT NULL,
+    CONSTRAINT PK_dim_sex PRIMARY KEY (SEX)
 );
 GO
 
-/* Dataset origen (trazabilidad) */
-CREATE TABLE dw.dim_source_dataset (
-    dataset_code VARCHAR(80)  NOT NULL,      -- ej: 'population_municipalities_csv'
-    dataset_name VARCHAR(200) NOT NULL,      -- ej: 'Population by municipalities'
-    source_org   VARCHAR(200) NULL,          -- ej: 'INE'
-    source_url   VARCHAR(400) NULL,
-    version_tag  VARCHAR(80)  NULL,          -- opcional: fecha descarga, versión, etc.
-    CONSTRAINT PK_dim_source_dataset PRIMARY KEY (dataset_code)
+CREATE TABLE dw.dim_death_cause (
+    DEATH_CAUSE_CODE NVARCHAR(200) NOT NULL,
+    DEATH_CAUSE_NAME NVARCHAR(300) NOT NULL,
+    CONSTRAINT PK_dim_death_cause PRIMARY KEY (DEATH_CAUSE_CODE)
 );
 GO
 
-/* Geografía unificada (España / provincia / municipio) */
-CREATE TABLE dw.dim_geo (
-    geo_code      VARCHAR(20)  NOT NULL,     -- tu código natural (INE / id / etc.)
-    geo_name      VARCHAR(200) NOT NULL,
-    geo_level     VARCHAR(12)  NOT NULL,     -- 'country' | 'province' | 'municipality'
-    province_code VARCHAR(20)  NULL,         -- si es municipality, aquí guardas su provincia (opcional)
-    CONSTRAINT PK_dim_geo PRIMARY KEY (geo_code),
-    CONSTRAINT CK_dim_geo_level CHECK (geo_level IN ('country','province','municipality'))
+CREATE TABLE dw.dim_economic_sector (
+    ECONOMIC_SECTOR NVARCHAR(200) NOT NULL,
+    CONSTRAINT PK_dim_economic_sector PRIMARY KEY (ECONOMIC_SECTOR)
 );
 GO
 
-/* (Opcional) Si QUIERES forzar integridad de province_code:
-   OJO: esto es una “relación” pero NO te obliga a montar jerarquías complejas.
-   Si no lo quieres, no ejecutes este ALTER.
-
-ALTER TABLE dw.dim_geo
-ADD CONSTRAINT FK_dim_geo_province
-FOREIGN KEY (province_code) REFERENCES dw.dim_geo(geo_code);
+-- PK compuesta: (CPRO, MUN_NUMBER)
+CREATE TABLE dw.dim_municipality (
+    CPRO       INT           NOT NULL,
+    MUN_NUMBER INT           NOT NULL,
+    MUN_NAME   NVARCHAR(200) NOT NULL,
+    CONSTRAINT PK_dim_municipality PRIMARY KEY (CPRO, MUN_NUMBER),
+    CONSTRAINT FK_dim_municipality_province
+        FOREIGN KEY (CPRO) REFERENCES dw.dim_province (CPRO)
+);
 GO
-*/
 
 /* =========================
-   2) HECHOS (fact unificada)
-========================= */
+   HECHOS
+   ========================= */
 
-CREATE TABLE dw.fact_indicator (
-    [year]         INT          NOT NULL,
-    geo_code       VARCHAR(20)  NOT NULL,
-    indicator_code VARCHAR(80)  NOT NULL,
-    dataset_code   VARCHAR(80)  NOT NULL,
-    value          DECIMAL(18,4) NOT NULL,
-
-    -- PK compuesta: 1 valor por (año, lugar, indicador, dataset)
-    CONSTRAINT PK_fact_indicator
-        PRIMARY KEY ([year], geo_code, indicator_code, dataset_code),
-
-    CONSTRAINT FK_fact_time
-        FOREIGN KEY ([year]) REFERENCES dw.dim_time([year]),
-
-    CONSTRAINT FK_fact_geo
-        FOREIGN KEY (geo_code) REFERENCES dw.dim_geo(geo_code),
-
-    CONSTRAINT FK_fact_indicator
-        FOREIGN KEY (indicator_code) REFERENCES dw.dim_indicator(indicator_code),
-
-    CONSTRAINT FK_fact_dataset
-        FOREIGN KEY (dataset_code) REFERENCES dw.dim_source_dataset(dataset_code)
+-- Grano: Provincia + Año + Sexo + Causa
+CREATE TABLE dw.fact_deaths (
+    CPRO             INT          NOT NULL,
+    [YEAR]           INT          NOT NULL,
+    SEX              NVARCHAR(50) NOT NULL,
+    DEATH_CAUSE_CODE NVARCHAR(200) NOT NULL,
+    TOTAL_DEATHS     INT          NOT NULL,
+    CONSTRAINT PK_fact_deaths PRIMARY KEY (CPRO, [YEAR], SEX, DEATH_CAUSE_CODE),
+    CONSTRAINT FK_fact_deaths_province
+        FOREIGN KEY (CPRO) REFERENCES dw.dim_province (CPRO),
+    CONSTRAINT FK_fact_deaths_time
+        FOREIGN KEY ([YEAR]) REFERENCES dw.dim_time ([YEAR]),
+    CONSTRAINT FK_fact_deaths_sex
+        FOREIGN KEY (SEX) REFERENCES dw.dim_sex (SEX),
+    CONSTRAINT FK_fact_deaths_cause
+        FOREIGN KEY (DEATH_CAUSE_CODE) REFERENCES dw.dim_death_cause (DEATH_CAUSE_CODE)
 );
 GO
 
-/* Índices útiles para consultas típicas */
-CREATE INDEX IX_fact_indicator_indicator_year
-    ON dw.fact_indicator(indicator_code, [year]);
+-- Grano: Provincia + Año + Sector
+CREATE TABLE dw.fact_economic_sector (
+    CPRO            INT           NOT NULL,
+    [YEAR]          INT           NOT NULL,
+    ECONOMIC_SECTOR NVARCHAR(200) NOT NULL,
+    TOTAL_VALUE     FLOAT         NOT NULL,  -- si es porcentaje, también vale; si prefieres DECIMAL, lo cambio
+    CONSTRAINT PK_fact_economic_sector PRIMARY KEY (CPRO, [YEAR], ECONOMIC_SECTOR),
+    CONSTRAINT FK_fact_economic_sector_province
+        FOREIGN KEY (CPRO) REFERENCES dw.dim_province (CPRO),
+    CONSTRAINT FK_fact_economic_sector_time
+        FOREIGN KEY ([YEAR]) REFERENCES dw.dim_time ([YEAR]),
+    CONSTRAINT FK_fact_economic_sector_sector
+        FOREIGN KEY (ECONOMIC_SECTOR) REFERENCES dw.dim_economic_sector (ECONOMIC_SECTOR)
+);
 GO
 
-CREATE INDEX IX_fact_indicator_geo_year
-    ON dw.fact_indicator(geo_code, [year]);
+-- Grano: Municipio + Año
+CREATE TABLE dw.fact_population_municipality (
+    CPRO        INT NOT NULL,
+    MUN_NUMBER  INT NOT NULL,
+    [YEAR]      INT NOT NULL,
+    POPULATION_TOTAL INT NOT NULL,
+    MALE_TOTAL       INT NOT NULL,
+    FEMALE_TOTAL     INT NOT NULL,
+    CONSTRAINT PK_fact_population_municipality PRIMARY KEY (CPRO, MUN_NUMBER, [YEAR]),
+    -- FK compuesta al municipio (esto es CLAVE)
+    CONSTRAINT FK_fact_population_municipality_mun
+        FOREIGN KEY (CPRO, MUN_NUMBER) REFERENCES dw.dim_municipality (CPRO, MUN_NUMBER),
+    CONSTRAINT FK_fact_population_municipality_time
+        FOREIGN KEY ([YEAR]) REFERENCES dw.dim_time ([YEAR])
+);
 GO

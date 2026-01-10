@@ -1,0 +1,38 @@
+# Data Engineering Project Settings
+app:
+  name: "Data Engineering Course Project"
+  version: "1.0.0"
+  environment: "development"
+
+database:
+  host: "localhost"
+  port: 5432
+  name: "data_engineering_db"
+  user: "postgres"
+  password: "${DB_PASSWORD}"
+  timeout: 30
+
+data_sources:
+  - name: "source_1"
+    type: "csv"
+    path: "./data/raw"
+    encoding: "utf-8"
+  
+  - name: "source_2"
+    type: "json"
+    endpoint: "https://api.example.com"
+    timeout: 60
+
+processing:
+  batch_size: 1000
+  workers: 4
+  timeout: 300
+
+logging:
+  level: "INFO"
+  format: "json"
+  file: "./logs/app.log"
+
+cache:
+  enabled: true
+  ttl: 3600

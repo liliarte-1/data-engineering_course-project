@@ -1,0 +1,46 @@
+2026-01-09 15:53:19,002 - INFO - ==== load_dw START ====
+2026-01-09 15:53:19,002 - INFO - Checking input file exists: C:\Almacén\USJ_2025_2026\IngenieriadeDatos\GitHub\data-engineering_course-project\data\staging\codauto_cpro_transformed.csv
+2026-01-09 15:53:19,003 - INFO - Checking input file exists: C:\Almacén\USJ_2025_2026\IngenieriadeDatos\GitHub\data-engineering_course-project\data\staging\death_causes_province_transformed.csv
+2026-01-09 15:53:19,003 - INFO - Checking input file exists: C:\Almacén\USJ_2025_2026\IngenieriadeDatos\GitHub\data-engineering_course-project\data\staging\economic_sector_province_transformed.csv
+2026-01-09 15:53:19,003 - INFO - Checking input file exists: C:\Almacén\USJ_2025_2026\IngenieriadeDatos\GitHub\data-engineering_course-project\data\staging\pobmun_combined_transformed.csv
+2026-01-09 15:53:19,003 - INFO - Reading CSVs from staging...
+2026-01-09 15:53:19,219 - INFO - Rows read -> codauto:52 deaths:126360 sector:4680 pob:138067
+2026-01-09 15:53:19,219 - INFO - Normalizing dtypes and cleaning strings...
+2026-01-09 15:53:19,300 - INFO - Building dimensions...
+2026-01-09 15:53:19,343 - INFO - Dim sizes -> autonomy:19 province:52 time:46 sex:3 death_cause:18 econ_sector:5 municipality:8488
+2026-01-09 15:53:19,344 - INFO - Building facts...
+2026-01-09 15:53:19,384 - WARNING - Population: 7567 duplicates detected by (CPRO, MUN_NUMBER, YEAR). Aggregating using MAX.
+2026-01-09 15:53:19,433 - INFO - Fact sizes -> deaths:126360 sector:4680 population:130500
+2026-01-09 15:53:19,433 - INFO - Connecting to SQL Server with driver: ODBC Driver 18 for SQL Server
+2026-01-09 15:54:59,414 - INFO - ==== load_dw START ====
+2026-01-09 15:54:59,414 - INFO - Checking input file exists: C:\Almacén\USJ_2025_2026\IngenieriadeDatos\GitHub\data-engineering_course-project\data\staging\codauto_cpro_transformed.csv
+2026-01-09 15:54:59,414 - INFO - Checking input file exists: C:\Almacén\USJ_2025_2026\IngenieriadeDatos\GitHub\data-engineering_course-project\data\staging\death_causes_province_transformed.csv
+2026-01-09 15:54:59,414 - INFO - Checking input file exists: C:\Almacén\USJ_2025_2026\IngenieriadeDatos\GitHub\data-engineering_course-project\data\staging\economic_sector_province_transformed.csv
+2026-01-09 15:54:59,414 - INFO - Checking input file exists: C:\Almacén\USJ_2025_2026\IngenieriadeDatos\GitHub\data-engineering_course-project\data\staging\pobmun_combined_transformed.csv
+2026-01-09 15:54:59,414 - INFO - Reading CSVs from staging...
+2026-01-09 15:54:59,575 - INFO - Rows read -> codauto:52 deaths:126360 sector:4680 pob:138067
+2026-01-09 15:54:59,575 - INFO - Normalizing dtypes and cleaning strings...
+2026-01-09 15:54:59,622 - INFO - Building dimensions...
+2026-01-09 15:54:59,644 - INFO - Dim sizes -> autonomy:19 province:52 time:46 sex:3 death_cause:18 econ_sector:5 municipality:8488
+2026-01-09 15:54:59,644 - INFO - Building facts...
+2026-01-09 15:54:59,670 - WARNING - Population: 7567 duplicates detected by (CPRO, MUN_NUMBER, YEAR). Aggregating using MAX.
+2026-01-09 15:54:59,697 - INFO - Fact sizes -> deaths:126360 sector:4680 population:130500
+2026-01-09 15:54:59,697 - INFO - Connecting to SQL Server with driver: ODBC Driver 18 for SQL Server
+2026-01-09 15:55:00,277 - INFO - Clearing tables (facts -> dims)...
+2026-01-09 15:55:20,308 - INFO - Tables cleared and committed
+2026-01-09 15:55:20,308 - INFO - Inserting dimensions...
+2026-01-09 15:55:20,399 - INFO - Inserted dim_autonomy: 19 rows
+2026-01-09 15:55:20,486 - INFO - Inserted dim_province: 52 rows
+2026-01-09 15:55:20,564 - INFO - Inserted dim_time: 46 rows
+2026-01-09 15:55:20,641 - INFO - Inserted dim_sex: 3 rows
+2026-01-09 15:55:20,713 - INFO - Inserted dim_death_cause: 18 rows
+2026-01-09 15:55:20,787 - INFO - Inserted dim_economic_sector: 5 rows
+2026-01-09 15:55:21,532 - INFO - Inserted dim_municipality: 8488 rows
+2026-01-09 15:55:21,565 - INFO - Dimensions committed successfully
+2026-01-09 15:55:21,565 - INFO - Inserting facts...
+2026-01-09 15:55:33,040 - INFO - Inserted fact_deaths: 126360 rows
+2026-01-09 15:55:33,396 - INFO - Inserted fact_economic_sector: 4680 rows
+2026-01-09 15:55:42,932 - INFO - Inserted fact_population_municipality: 130500 rows
+2026-01-09 15:55:42,971 - INFO - Facts committed successfully
+2026-01-09 15:55:42,972 - INFO - ==== load_dw SUCCESS in 43.56s ====
+2026-01-09 15:55:43,096 - INFO - SQL connection closed

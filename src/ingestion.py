@@ -1,5 +1,3 @@
-# RETRIEVE DATA FROM WEB SOURCE
-
 import logging
 import requests
 import pandas as pd
@@ -16,9 +14,27 @@ logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(message)s"
 )
 
-urls = ["https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/0201010101.csv", 
-        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/households_dataset.csv"]
-
+urls = ["https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/death_causes_province.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/economic_sector_province.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2008.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2009.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2010.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2011.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2012.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2013.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2014.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2015.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2016.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2017.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2018.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2019.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2020.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2021.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2022.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2023.csv",
+        "https://raw.githubusercontent.com/liliarte-1/data-engineering_course-project/refs/heads/main/data_retrieval_simulation/pobmun/pobmun2024.csv",
+        ]
+        
 
 logging.info(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 raw_dir = "data/raw"
@@ -38,7 +54,7 @@ for idx, url in enumerate(urls):
         # df = pd.read_csv(io.StringIO(response.text),sep=',',on_bad_lines='skip')
 
         # so we do this instead
-        df = pd.read_csv(io.StringIO(response.text),sep=";",on_bad_lines="warn")
+        df = pd.read_csv(io.StringIO(response.text), sep=";", on_bad_lines="warn")
 
         # extract file name from URL
         file_name = os.path.basename(urlparse(url).path)
@@ -53,9 +69,9 @@ for idx, url in enumerate(urls):
         )
 
          # INITIAL DATA EXPLORATION
-        logging.info(f"\nDataset Shape: {df.shape}")
-        logging.debug(f"\nColumn Names & Types:\n{df.dtypes}")
-        logging.info(f"\nTotal Missing: {df.isnull().sum().sum()}\n")
+        logging.info(f"Dataset Shape: {df.shape}")
+        logging.debug(f"Column Names & Types:\n{df.dtypes}")
+        logging.info(f"Total Missing: {df.isnull().sum().sum()}")
 
     # handle network errors and parsing errors
     except requests.RequestException as exc:

@@ -58,6 +58,8 @@ for f in archivos:
                 .replace({"": pd.NA})
                 .astype("Int64")
         )
+
+        
     # report missing counts after cleaning numeric-like columns for this file
     try:
         missing_int_after = df[int_cols].isnull().sum().to_dict()
