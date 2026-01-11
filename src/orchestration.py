@@ -6,25 +6,25 @@ import time
 from pathlib import Path
 from datetime import datetime
 
-# ==== Paths ====
+# Paths 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src"
 LOGS = ROOT / "logs"
 WAREHOUSE = ROOT / "warehouse"
 
-# ==== Commands ====
+# Commands
 INGESTION = [sys.executable, SRC / "ingestion.py"]
 TRANSFORMATION = [sys.executable, SRC / "transformation.py"]
 LOAD_DW = [sys.executable, SRC / "load_dw.py"]
 SCHEMA = ["psql", "-f", WAREHOUSE / "schema.sql"]
 
 
-# ==== Retry policy ====
+# Retry policy for ingestion
 INGESTION_RETRIES = 3
 BACKOFF = 2
 
 
-# ==== Logging config ====
+# logging
 logging.basicConfig(
     filename=LOGS / "orchestration.log",
     level=logging.INFO,

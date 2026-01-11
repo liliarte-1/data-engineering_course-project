@@ -7,7 +7,7 @@ import pandas as pd
 import pyodbc
 import logging
 
-# --- logging ---
+# logging 
 Path("./logs").mkdir(parents=True, exist_ok=True)
 
 logging.basicConfig(
@@ -18,7 +18,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-# CONFIG: rutas CSV
+# csv
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 DATA_DIR = PROJECT_ROOT / "data" / "staging"
@@ -26,10 +26,10 @@ CSV_CODAUTO = DATA_DIR / "codauto_cpro_transformed.csv"
 CSV_DEATH  = DATA_DIR / "death_causes_province_transformed.csv"
 CSV_SECTOR = DATA_DIR / "economic_sector_province_transformed.csv"
 CSV_POB    = DATA_DIR / "pobmun_combined_transformed.csv"
-CLEAR_BEFORE_LOAD = True  # True = borra y recarga
+CLEAR_BEFORE_LOAD = True  # True = IMPORTANT, CLEAR AND RELOADS BEFORE ADDING NEW DATA
 
 
-# CONFIG: conexión (Azure SQL / SQL Server)
+# CONFIG: connection (Azure SQL)
 SERVER   = os.getenv("AZURE_SQL_SERVER",   "srv-dw-liliarte-01.database.windows.net")
 DATABASE = os.getenv("AZURE_SQL_DATABASE", "dw_final_project")
 USERNAME = os.getenv("AZURE_SQL_USERNAME", "dwadmin")
@@ -47,9 +47,8 @@ CONNECTION = (
 )
 
 
-# =========================
+
 # HELPERS
-# =========================
 
 def require_file(path: Path) -> None:
     if not path.exists():
@@ -94,7 +93,6 @@ def clear_tables(cursor) -> None:
 
 
 # MAIN
-
 def main() -> int:
     start_ts = time.time()
     logger.info("==== load_dw START ====")

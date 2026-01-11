@@ -43,7 +43,7 @@ vCores: 4–8 vCores
 Usage pattern: Daily usage with heavy ETL and analytical querie
 Backups: Automatic backups enabled (mandatory)
 Spain Central
-Estimated monthly cost: [(calculated using Azure Pricing Calculator)](https://azure.com/e/aa6a5140389f4b65986199e78591d618)
+Estimated monthly cost: [(calculated using Azure Pricing Calculator)](https://azure.com/e/8e3b66cc3ef84717aa24e6c62719e96d)
 
 ### x10⁶ Data Volume (≈ 130 billion rows)
 Estimated storage: ~42 TB

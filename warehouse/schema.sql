@@ -1,11 +1,11 @@
--- Asegura el schema
+-- secure schema
 IF SCHEMA_ID('dw') IS NULL
     EXEC ('CREATE SCHEMA dw');
 GO
 
-/* =========================
-   DIMENSIONES
-   ========================= */
+/*
+dims 
+*/
 
 CREATE TABLE dw.dim_autonomy (
     CODAUTO       INT           NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE dw.dim_economic_sector (
 );
 GO
 
--- PK compuesta: (CPRO, MUN_NUMBER)
+-- PK composed: (CPRO, MUN_NUMBER)
 CREATE TABLE dw.dim_municipality (
     CPRO       INT           NOT NULL,
     MUN_NUMBER INT           NOT NULL,
@@ -60,11 +60,11 @@ CREATE TABLE dw.dim_municipality (
 );
 GO
 
-/* =========================
-   HECHOS
-   ========================= */
+/* 
+facts
+*/
 
--- Grano: Provincia + Año + Sexo + Causa
+
 CREATE TABLE dw.fact_deaths (
     CPRO             INT          NOT NULL,
     [YEAR]           INT          NOT NULL,
@@ -83,12 +83,11 @@ CREATE TABLE dw.fact_deaths (
 );
 GO
 
--- Grano: Provincia + Año + Sector
 CREATE TABLE dw.fact_economic_sector (
     CPRO            INT           NOT NULL,
     [YEAR]          INT           NOT NULL,
     ECONOMIC_SECTOR NVARCHAR(200) NOT NULL,
-    TOTAL_VALUE     FLOAT         NOT NULL,  -- si es porcentaje, también vale; si prefieres DECIMAL, lo cambio
+    TOTAL_VALUE     FLOAT         NOT NULL,  
     CONSTRAINT PK_fact_economic_sector PRIMARY KEY (CPRO, [YEAR], ECONOMIC_SECTOR),
     CONSTRAINT FK_fact_economic_sector_province
         FOREIGN KEY (CPRO) REFERENCES dw.dim_province (CPRO),
@@ -99,7 +98,7 @@ CREATE TABLE dw.fact_economic_sector (
 );
 GO
 
--- Grano: Municipio + Año
+
 CREATE TABLE dw.fact_population_municipality (
     CPRO        INT NOT NULL,
     MUN_NUMBER  INT NOT NULL,
@@ -108,7 +107,7 @@ CREATE TABLE dw.fact_population_municipality (
     MALE_TOTAL       INT NOT NULL,
     FEMALE_TOTAL     INT NOT NULL,
     CONSTRAINT PK_fact_population_municipality PRIMARY KEY (CPRO, MUN_NUMBER, [YEAR]),
-    -- FK compuesta al municipio (esto es CLAVE)
+    -- FK to municipality (KEY)
     CONSTRAINT FK_fact_population_municipality_mun
         FOREIGN KEY (CPRO, MUN_NUMBER) REFERENCES dw.dim_municipality (CPRO, MUN_NUMBER),
     CONSTRAINT FK_fact_population_municipality_time

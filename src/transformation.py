@@ -7,7 +7,7 @@ import re
 from pathlib import Path
 
 
-# Configure logging
+# logging
 logging.basicConfig(
     filename="./logs/transformation.log",
     level=logging.INFO,
@@ -18,9 +18,8 @@ logger = logging.getLogger(__name__)
 logger.info(f"Started at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
 
 
-# -----------------------------
-# Helpers (to avoid repetition)
-# -----------------------------
+
+# helpers to avoid repetition
 def remove_punctuation_parentheses(s: pd.Series) -> pd.Series:
     """Remove commas and parentheses, keep as pandas string dtype."""
     return (
@@ -32,14 +31,13 @@ def remove_punctuation_parentheses(s: pd.Series) -> pd.Series:
 
 
 def clean_int_like(series: pd.Series, *, zfill: int | None = None) -> pd.Series:
-    """
-    Clean numeric-like strings:
-    - trims
-    - removes '.' as thousands separator
-    - removes spaces
-    - optionally left-pads with zeros (zfill)
-    - converts to nullable Int64
-    """
+    # Clean numeric-like strings:
+    # - trims
+    # - removes '.' as thousands separator
+    # - removes spaces
+    # - optionally left-pads with zeros (zfill)
+    # - converts to nullable Int64
+
     out = (
         series.astype("string")
               .str.strip()
@@ -61,10 +59,9 @@ def extract_year_from_filename(path: Path) -> int:
 
 
 def parse_provincia_field(series: pd.Series) -> tuple[pd.Series, pd.Series]:
-    """
-    Extract CPRO and CPRO_NAME from strings like:
-    '28 - Madrid' / '28: Madrid' / '28–Madrid'
-    """
+
+    # Extract CPRO and CPRO_NAME from strings like:
+    # '28 - Madrid' / '28: Madrid' / '28–Madrid'
     ext = series.astype("string").str.extract(r"^\s*(\d{1,2})\s*[-–:]*\s*(.+?)\s*$")
     cpro = ext[0].astype("string").str.zfill(2)
     name = ext[1].astype("string").str.strip()
@@ -72,14 +69,12 @@ def parse_provincia_field(series: pd.Series) -> tuple[pd.Series, pd.Series]:
 
 
 def normalize_total_with_imputation(df: pd.DataFrame, total_col: str, group_cols: list[str]) -> pd.Series:
-    """
-    Normalize Total:
-    - remove thousands separators
-    - to numeric
-    - fill NaN with group mean
-    - fill remaining with global mean
-    - round and Int64
-    """
+    # Normalize Total:
+    # - remove thousands separators
+    # - to numeric
+    # - fill NaN with group mean
+    # - fill remaining with global mean
+    # - round and Int64
     tmp = (
         df[total_col].astype(str)
                     .str.strip()
@@ -95,14 +90,14 @@ def normalize_total_with_imputation(df: pd.DataFrame, total_col: str, group_cols
 
 
 def cpro_div10_if_needed(cpro: pd.Series) -> pd.Series:
-    """
-    Normalize CPRO by dividing by 10 when needed.
-    Examples:
-    - 280 -> 28
-    - 10  -> 1
-    - 20  -> 2
-    - 28  -> 28 (unchanged)
-    """
+
+    # Normalize CPRO by dividing by 10 when needed.
+    # Examples:
+    # - 280 -> 28
+    # - 10  -> 1
+    # - 20  -> 2
+    # - 28  -> 28 (unchanged)
+
     c = pd.to_numeric(cpro, errors="coerce").astype("Int64")
 
     # divide by 10 when value ends with 0 and is >= 10
@@ -113,13 +108,13 @@ def cpro_div10_if_needed(cpro: pd.Series) -> pd.Series:
 
 
 def normalize_cpro_string(cpro: pd.Series) -> pd.Series:
-    """
-    Normalize CPRO as a 2-digit string.
-    - trims
-    - keeps only digits
-    - if value has 3+ digits (e.g. 280), divide by 10
-    - zero-pad to 2 digits
-    """
+  
+    # Normalize CPRO as a 2-digit string.
+    # - trims
+    # - keeps only digits
+    # - if value has 3+ digits (e.g. 280), divide by 10
+    # - zero-pad to 2 digits
+ 
     s = (
         cpro.astype("string")
             .str.strip()
@@ -135,9 +130,8 @@ def normalize_cpro_string(cpro: pd.Series) -> pd.Series:
     return n.astype("Int64").astype("string").str.zfill(2)
 
 
-# -----------------------------
-# Pobmun combined (many files)
-# -----------------------------
+
+# Pobmun combined files
 ruta = Path("data/raw")
 archivos = sorted(ruta.glob("pobmun*.csv*"))
 logger.info(f"Found {len(archivos)} source files in {ruta}")
@@ -231,9 +225,8 @@ logger.info("Missing values by column:")
 logger.info(df_total.isnull().sum())
 
 
-# -----------------------------
+
 # Reference codauto
-# -----------------------------
 #9
 codauto = pd.read_csv("data/raw/codauto_cpro.csv", sep=";")
 logger.info(f"Loaded codauto reference with shape {codauto.shape}; unique CPRO: {codauto['CPRO'].nunique(dropna=True)}")
@@ -245,9 +238,7 @@ codauto["CPRO"] = clean_int_like(codauto["CPRO"], zfill=2)
 codauto["CODAUTO"] = clean_int_like(codauto["CODAUTO"])
 
 
-# -----------------------------
 # Economic sector (province)
-# -----------------------------
 #10
 economic_df = pd.read_csv("data/raw/economic_sector_province.csv", sep=",").copy()
 logger.info(f"Loaded economic sector file with shape {economic_df.shape}")
@@ -257,7 +248,7 @@ economic_df = economic_df[~economic_df["Provincias"].str.lower().eq("total nacio
 logger.info(f"Filtered economic sector rows, new shape {economic_df.shape}")
 
 #11
-# Normaliza Total a numérico + imputación
+# normalize total to numeric and replace
 economic_df["Total"] = pd.to_numeric(
     economic_df["Total"].astype(str).str.strip().str.replace(".", "", regex=False),
     errors="coerce"
@@ -293,9 +284,8 @@ logger.info(f"Economic dataset aggregated to shape {economic_df.shape} and colum
 logger.info(f"Transformation completed at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 
-# -----------------------------
+
 # Death causes (province)
-# -----------------------------
 deathcauses_df = pd.read_csv("data/raw/death_causes_province.csv", sep=",")
 
 #15
@@ -314,7 +304,7 @@ deathcauses_df = deathcauses_df[~deathcauses_df["Provincias"].str.lower().eq("ex
 deathcauses_df.reset_index(drop=True, inplace=True)
 
 #17
-# Normaliza + imputación por provincia y causa
+# normalize and impute
 deathcauses_df["Total"] = (
     deathcauses_df["Total"]
     .astype(str)
@@ -357,7 +347,7 @@ logger.info(codauto.columns)
 
 
 #20
-# Normalize CPRO as 2-digit STRING across all datasets (DW-safe key)
+# normalize CPRO as 2-digit STRING across all datasets (DW-safe key)
 df_total["CPRO"] = cpro_div10_if_needed(df_total["CPRO"])
 df_total["CPRO"] = normalize_cpro_string(df_total["CPRO"])
 economic_df["CPRO"] = normalize_cpro_string(economic_df["CPRO"])
@@ -374,7 +364,7 @@ deathcauses_df[["DEATH_CAUSE_CODE", "DEATH_CAUSE_NAME"]] = (
 deathcauses_df.drop(columns=["DEATH_CAUSE"], inplace=True)
 
 
-
+# saving
 logger.info("Saving transformed datasets to data/staging/")
 df_total.to_csv("data/staging/pobmun_combined_transformed.csv", index=False)
 economic_df.to_csv("data/staging/economic_sector_province_transformed.csv", index=False)
