@@ -1,0 +1,9 @@
+# ignore csvs or not necessary docs
+data/raw/*.csv
+data/staging/*.csv
+logs/*.log
+
+# maintain folder 
+!data/raw/.gitkeep
+!data/staging/.gitkeep
+!logs/.gitkeep
