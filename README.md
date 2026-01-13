@@ -381,4 +381,13 @@ Use scalable cloud services with autoscaling and cost monitoring, ensuring that 
 # EXECUTION
 Just execute the main.py after installing the requierements.txt
 
+## FUTURE IMPROVEMENTS
+The developer found some errors while reviewing the project, and could not perform the complete study for the project which could have been massive and even at the level to present it to the Spain Goverment
+
+Those are:
+
+The Municipality Number is not unique, the developer should have checked that and give each municipality a unique number, since some of the municipalities between the different provinces repeat. Therefore, the calculations between a Municipalitie and the estimation that people which work in a sector based in the CPRO could not be made.
+
+The code for the transformation could have been better, defining the type of the data before to avoid type errors or reconverting it in several occasions.
+
 # REVIEW THE DOCS FOR THE WAREHOUSE AND PIPELINE DIAGRAMS, AND THE POWER BI EXAMPLES!!!
